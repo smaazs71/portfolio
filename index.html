@@ -1,0 +1,3107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+
+    <!-- w3SchoolBootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+
+    <!-- Animation michalsnik aos CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+    <!-- mdbootstrap -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Toastr library css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+    <!-- Project External css -->
+    <link rel="stylesheet" href="assets/css/externalCSS.css">
+
+    
+    <base target="_blank">
+
+    <!-- Internal CSS -->
+
+    <!-- General CSS -->
+    <style>
+        *{
+            font-family: Arial;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body{
+            background: #212121;
+            overflow-x: hidden;
+        }
+        a{
+            target: _blank;
+        }
+        .colorF1F1F1{
+            color: #f1f1f1;
+        }
+        .color212121{
+            color: #212121;
+        }
+        .opacity{
+            opacity: 0.75;
+        }
+        .opacity:hover{
+            opacity: 1;
+        }
+        .transformAngle{
+            transform: skew(0deg,-2deg);
+            ms-transform: skew(0deg,-2deg);        
+        }
+
+        .font1VW{
+            font-size: 20px;
+        }
+        .font1_5VW{
+            font-size: 17px;
+        }
+        .font1_7VW{
+            font-size: 20px;
+        }
+        .font2VW{
+            font-size: 22px;
+        }
+        .font2_2VW{
+            font-size: 25px;
+        }
+        .font3VW{
+            font-size: 30px;
+        }
+        .font4VW{
+            font-size: 35px;
+        }         
+/* 
+        .font1VW{
+            font-size: 0.85vw;
+        }
+        .font1_5VW{
+            font-size: 1.275vw;
+        }
+        .font1_7VW{
+            font-size: 1.445vw;
+        }
+        .font2VW{
+            font-size: 1.7vw;
+        }
+        .font2_2VW{
+            font-size: 1.87vw;
+        }
+        .font3VW{
+            font-size: 2.55vw;
+        }
+        .font4VW{
+            font-size: 3.4vw;
+        }
+        @media only screen and (max-width: 1111px) {
+            .font1VW{
+                font-size: 1vw;
+            }
+            .font1_5VW{
+                font-size: 1.5vw;
+            }
+            .font1_7VW{
+                font-size: 1.7vw;
+            }
+            .font2VW{
+                font-size: 2vw;
+            }
+            .font2_2VW{
+                font-size: 2.2vw;
+            }
+            .font3VW{
+                font-size: 3vw;
+            }
+            .font4VW{
+                font-size: 4vw;
+            }    
+        }
+        @media only screen and (max-width: 991px) {
+            .font1VW{
+                font-size: 1.15vw;
+            }
+            .font1_5VW{
+                font-size: 1.725vw;
+            }
+            .font1_7VW{
+                font-size: 1.95vw;
+            }
+            .font2VW{
+                font-size: 2.3vw;
+            }
+            .font2_2VW{
+                font-size: 2.53vw;
+            }
+            .font3VW{
+                font-size: 3.45vw;
+            }
+            .font4VW{
+                font-size: 4.6vw;
+            }    
+        }
+        @media only screen and (max-width: 800px) {
+            .font1VW{
+                font-size: 1.5vw;
+            }
+            .font1_5VW{
+                font-size: 2.25vw;
+            }
+            .font1_7VW{
+                font-size: 2.55vw;
+            }
+            .font2VW{
+                font-size: 3vw;
+            }
+            .font2_2VW{
+                font-size: 3.3vw;
+            }
+            .font3VW{
+                font-size: 4.5vw;
+            }
+            .font4VW{
+                font-size: 6vw;
+            }    
+        }
+        @media only screen and (max-width: 575px) {
+            .font1VW{
+                font-size: 20px;
+            }
+            .font1_5VW{
+                font-size: 17px;
+            }
+            .font1_7VW{
+                font-size: 20px;
+            }
+            .font2VW{
+                font-size: 22px;
+            }
+            .font2_2VW{
+                font-size: 25px;
+            }
+            .font3VW{
+                font-size: 30px;
+            }
+            .font4VW{
+                font-size: 35px;
+            }    
+        } */
+    </style>
+
+    <!-- Onload CSS -->
+    <style>
+        .fadeBody{
+            opacity: 0;
+        }
+        .fadeTransition{
+            transition-property: opacity;
+            transition-duration: 2s;
+        }
+
+        .name{
+            position: relative;
+            transition-property: all;
+            transition-duration: 1s;
+        }
+        .leftName{
+            right: 1000px;
+        }
+        .rightName{
+            left: 1000px;
+        }
+        .mainName{
+            bottom: 1000px;
+        }
+        .afterName{
+            top: 1000px;
+        }
+    </style>
+
+    <!-- Home CSS -->
+    <style>
+        #home{
+            z-index: 11;
+            margin: 0;
+            height: 100%;
+            background: url("assets/images/home.gif")no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        .learnMoreBtn {
+            display: none;
+            bottom: 0;
+            border-radius: 10%; 
+            border: 1px solid #bbb; 
+            color: #bbb;
+            transition: 250ms;
+        }
+        .learnMoreBtn:hover {
+            background: #33b5e5;
+            color: #fff;
+            border-radius: 50%; 
+        }
+    </style>
+
+    <!-- Sidebar CSS -->
+    <style>
+        .sidebar {
+            height:100%; 
+            position: fixed; 
+            top: 0; 
+            z-index: 10;
+        }
+        
+        @media only screen and (max-width: 666px) {
+            .sidebar{
+                display: none;
+            }  
+        }
+    </style>
+
+    <!-- Social Media CSS -->
+    <style>
+        #socialMedia {
+            left: 0; 
+            width:85px; 
+        }
+        .btn-lg {
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50%;
+            margin: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.7;
+        }
+        .btn-lg:hover {
+            opacity: 1;
+        }
+    </style>
+
+    <!-- Navigation CSS -->
+    <style>
+        #navigation {
+            right: 0;
+            font-size:10px;
+        }
+        .fa-circle {
+            opacity: 0.7;
+            margin: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .fa-circle:hover {
+            opacity: 1;
+        }
+        .hide {
+            transition: 3s;
+            display: none;
+        }
+        .fa-circle:hover + .hide {
+            display: block;
+            transition: 3s;
+
+        }
+    </style>
+
+    <!-- Mobile Navigation CSS -->
+    <style>        
+        #mobileNavigation{
+            display: none;
+        }
+        .menuButton{
+            font-size: 30px; 
+            border-radius: 5px; 
+            /* padding-bottom: 7px; 
+            padding-top: 7px; 
+            padding-left: 12px; 
+            padding-right: 12px;  */
+            z-index: 10; 
+            position: fixed;
+            right: 0px; 
+            top: 0px;
+        }
+        @media only screen and (max-width: 666px) {
+            #mobileNavigation{
+                display: block;
+            }
+        }
+    </style>
+
+    <!-- Skills CSS -->
+    <style>
+        .skillDiv{
+            min-height:100%; 
+            color: white; 
+            background: #212121; 
+            width: 75%;
+        }
+        .languageImg{
+            height: 80px; 
+            width: 80px; 
+            margin: 7px;
+        }
+        .languageDiv{
+            border-right: 1px solid white;
+        }
+        .toolsFont{
+            font-size: 40px;
+        }
+        .frameworkDiv{
+            border-top: 1px solid white;
+            border-right: 1px solid white;
+        }
+        .databaseDiv{
+            border-top: 1px solid white;
+        }
+        
+        @media only screen and (max-width: 767px) {
+            .languageDiv {
+                border: none;
+                margin-bottom: 30px;
+            }
+            .frameworkDiv{
+                border: none;
+                border-right: 1px solid white;
+            }
+            .databaseDiv{
+                border: none;
+            }
+        }
+        @media only screen and (max-width: 575px) {
+            .skillDiv{
+                width: 100%;
+            }
+            .frameworkDiv{
+                border: none;
+            }  
+        }
+    </style>
+
+    <!-- Projects CSS -->
+    <style>
+    #projects{
+        background: url("assets/images/projectsBg.jpg")no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .projectColumn{
+        padding: 5px; 
+        margin: 7vw;
+        border-radius: 8px;
+    }
+    #textProjectColumn{
+        text-align: left; 
+        background: #212121;
+    }
+    #displayProjectColumn{
+        text-align: center; 
+        background: none;
+    }
+    #dateInTextColumn{
+        margin-top: 2vw;
+        display: none;
+    }
+    .projectArrowUp{
+        position: absolute; 
+        bottom: -80px; 
+        left: 47.5%;
+        width: 5%;
+    }
+    .projectCenterLine{
+        background: white; 
+        width: 0.2%; 
+        position: absolute; 
+        left: 49.9%; 
+        height: 100%;
+    }
+    .projectCenterPoint{
+        position: absolute; 
+        top: 0%; 
+        left: 48.5%;
+        height: 100%;
+        width: 3%;
+    }
+    @media only screen and (max-width: 991px) {    
+        .projectColumn{
+            margin: 3vw;
+        }
+    }
+    
+    @media only screen and (max-width: 850px) {    
+        .projectColumn{
+            margin: 5vw;
+        }
+    }
+    
+    @media only screen and (max-width: 800px) {    
+        .projectColumn{
+            margin: 7vw;
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        .projectArrowUp{
+            left: 2.5%;
+            width: 6%;
+        }
+        .projectCenterLine{
+            left: 7.8%;
+            width: 0.4;
+        }
+        .projectCenterPoint{
+            left: 6%;
+            width: 4%;
+        }
+        #textProjectColumn{
+            margin-left: 10vw;
+            margin-right: 0vw;
+        }
+        #displayProjectColumn{
+            display: none;
+        }
+        #dateInTextColumn{
+            display: block;
+        }   
+    }
+    @media only screen and (max-width: 666px) {
+        .projectArrowUp{
+            left: -4%;
+            width: 6%;
+        }
+        .projectCenterLine{
+            left: 1.8%;
+            width: 0.4;
+        }
+        .projectCenterPoint{
+            left: 0%;
+            width: 4%;
+        }
+        #textProjectColumn{
+            margin: 7vw;
+        }
+    }
+    @media only screen and (max-width: 575px) {
+        .projectArrowUp{
+            display: none;
+        }
+        .projectCenterLine{
+            display: none;
+        }
+        .projectCenterPoint{
+            display: none;
+        }
+        #textProjectColumn{
+            margin: 7vw;
+        }
+    }
+    </style>
+    <!-- Project Flipping CSS -->
+    <style>
+
+        /* .containerFlip, */
+        /* .flip-box, */
+        .front,
+        .back {
+            width: 100%;
+            height: 100%;
+        }
+
+        .containerFlip,
+        .flip_box {
+            position: relative;
+        }
+
+        /* .front, */
+        .back {
+            top: 0%;
+            position: absolute;
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        .projectGIF{
+            transition: transform .2s;
+        }
+        .projectGIF:hover{
+            transform: scale(1.5);
+        }
+
+        .containerFlip {
+            -moz-transform: perspective(1200px);
+            -webkit-perspective: 1200px;
+            perspective: 1200px;
+        }
+
+        .flip_box {
+            transition: all 0.5s ease-out;
+            -webkit-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+        }
+
+        .front {
+            padding: 25px;
+            background-color: #212121;
+            /* background-image: url('https://img-fotki.yandex.ru/get/194550/29644339.5/0_d6c5f_c9f15850_orig'); */
+        }
+
+        .back {
+            background-color: #D21849;
+            -webkit-transform: rotateY(180deg);
+            -moz-transform: rotateY(180deg);
+            -ms-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+        }
+
+
+        .flipped {
+            -webkit-transform: rotateY(-180deg);
+            -moz-transform: rotateY(-180deg);
+            -ms-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+        }
+
+        .r_wrap {
+            position: absolute;
+            right: 5%;
+            top: 88px;
+        }
+
+        .b_round,
+        .s_round {
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background-color: #D21849;
+            transition: all 0.2s linear;
+            z-index: 3;
+        }
+
+        .b_round {
+            z-index: 2;
+            transform: scale(1);
+            opacity: 0;
+            background-color: #D21849;
+        }
+
+        .s_round:hover + .b_round{
+            transform: scale(1.37);
+            opacity: 0.4;  
+        } 
+
+        .b_round_hover {
+            transform: scale(1.37);
+            opacity: 0.4;
+        }
+
+        .b_round_back_hover {
+            background-color: #F60044;
+        }
+
+        .s_round_click {
+            transform: scale(1.7);
+        }
+
+        .s_round_back {
+            background-color: #C30C3D;
+        }
+
+        .s_arrow {
+            position: absolute;
+            top: -3px;
+            left: -3px;
+            width: 52px;
+            height: 52px;
+            background-image: url('https://img-fotki.yandex.ru/get/194549/29644339.5/0_d6c60_1d7815f0_orig');
+            background-color: transparent;
+            transition: all 0.35s linear;
+        }
+
+        .s_arrow_rotate {
+            transform: rotate(-180deg);
+        }
+    </style>
+
+    <!-- Qualification CSS -->
+    <style>
+        .slideshow-container {
+            max-width: 500px;
+            position: relative;
+            margin: auto;
+            text-align: center;
+            left:0%;
+        }
+
+        .mySlides {
+            overflow: hidden;
+            width: 500px;
+            position: absolute;
+            margin: auto;
+            margin-top: 70px;
+            left: 350px;
+            padding: 400px;
+            transition: all 1.75s ease-in-out;
+            -webkit-transition: all 1.75s ease-in-out;
+        }
+        img {vertical-align: middle;}
+
+        /* The dots/bullets/indicators */
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+
+        @media only screen and (max-width: 575px) {
+            .mySlides{
+                width: 90%;
+                margin-left: 5%;
+            }
+        }
+    </style>
+
+    <!-- Resume CSS -->
+    <style>
+        .resume{
+            height: 1200px;
+            width: 100%;
+        }
+        @media only screen and (max-width: 991px) {
+            .resume{
+                height: 700px;
+            }
+        }
+        /* @media only screen and (max-width: 500px) {
+            .resume{
+                height: 650px;
+            }
+        } */
+        @media only screen and (max-width: 575px) {
+            .resume{
+                height: 135vw;
+            }
+        }
+    </style>
+
+    <!-- Contact CSS -->
+    <style>
+        #contactDiv{
+            background: url("assets/images/contactBg.jpg")no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            
+        }
+        .map-container-section {
+            overflow:hidden;
+            padding-bottom:56.25%;
+            position:relative;
+            height:0;
+        }
+        .map-container-section iframe {
+            left:0;
+            top:0;
+            height:100%;
+            width:100%;
+            position:absolute;
+        }    
+        @media only screen and (max-width: 1111px) {
+            .contactContainer{
+                width: 86%;
+                margin-left: 7%;
+                margin-right: 7%;
+            }
+            
+        }
+        @media only screen and (max-width: 991px) {
+            .contactContainer{
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        @media only screen and (max-width: 666px) {
+            .contactContainer{
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    </style>
+
+    <!-- Review And Rating CSS -->
+    <style>
+        #reviewRatingContainer{
+            max-width: 80%;
+        }
+        .toCenterRating{
+            margin: auto; 
+            width: 430px;
+            height: 60px; 
+        }
+        .ratingHide4Large{
+            display: none;
+        }
+        .ratingHide4Small{
+            display: block;
+        }
+        .star{
+            background:white; 
+            float: left; 
+            position: relative;
+        }
+        .star:hover .starDescription{
+            display: flex;
+        }
+        .starBg{
+            position:absolute; 
+            background: linear-gradient(to top, #ffcc00 0%, #ffff66 100%);
+            bottom: 0;  
+            left: 0;
+            height: 0%;
+            width: 100%;
+            z-index: 1;
+            transition-property: all;
+            transition-duration: 1s;
+        }
+        .starClickBg{
+            position:absolute; 
+            background: linear-gradient(to top, #ff3300 0%, #ffffaa 100%);
+            bottom: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 0;
+            transition-property: all;
+            transition-duration: 1s;
+        }
+        .starDescription{
+            display:none; /* flex */
+            position: absolute; 
+            border-radius: 5px; 
+            background: white; 
+            top: 120%; 
+            margin: 0%;
+            padding: 0;
+            text-align: center;
+            z-index: 2;
+        }
+        
+        .starDescriptionArrow{
+            fill:#000000; 
+            position: absolute; 
+            left:8px; 
+            top: -30%; 
+            z-index: 1;
+        }
+        .avgRating4Small{
+            float: left;
+        }
+        .ratingUpload{ 
+            float: left; 
+            position: relative;
+            transition-property: all;
+            transition-duration: 2s;
+        }
+        .ratingUpload:hover{
+            position: relative;
+            bottom: 10px;
+            box-shadow: #f1f1f1;
+        }
+        .ratingUpload:hover .ratingUploadDescription{
+            display: flex;
+        }
+        
+        .ratingUploadDescription{
+            display:none; /* flex */
+            position: absolute; 
+            border-radius: 5px; 
+            background: white; 
+            top: 100%; 
+            margin: 0%;
+            padding: 0;
+            text-align: center;
+        }
+
+        #reviewDiv {
+            margin: 0 auto; /* Center website */
+            max-width: 800px; /* Max width */
+            padding: 20px;
+            border-left: 1px solid #f1f1f1;
+        }
+        
+        .reviewHeading {
+            font-size: 30px;
+            margin-right: 25px;
+        }
+        
+        /* Three column layout */
+        .reviewSide {
+            float: left;
+            width: 15%;
+            margin-top:10px;
+        }
+        
+        .reviewMiddle {
+            margin-top:10px;
+            float: left;
+            width: 70%;
+        }
+        
+        /* Place text to the right */
+        .reviewRight {
+            text-align: right;
+        }
+        
+        /* Clear floats after the columns */
+        .reviewRow:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        /* The bar container */
+        .reviewBar-container {
+            width: 100%;
+            background-color: #f1f1f1;
+            text-align: center;
+            color: white;
+        }
+        
+        /* Individual bars */
+        .reviewBar-5 {width: 60%; height: 18px; background-color: #4CAF50;}
+        .reviewBar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+        .reviewBar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+        .reviewBar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+        .reviewBar-1 {width: 15%; height: 18px; background-color: #f44336;}
+
+        .ratingHr{
+            margin-top: 35px; 
+            border:1px solid #f1f1f1
+        }
+        /* Responsive layout - make the columns stack on top of each other instead of next to each other */
+        @media (max-width: 1199px) {
+            #reviewDiv {
+                border: none;
+            }
+            .toCenterRating{
+                width: 400px;
+            }
+        }
+        @media only screen and (max-width: 666px) {
+            #reviewRatingContainer{
+                max-width: 90%;
+            }
+        }
+        @media only screen and (max-width: 505px) {
+            #reviewRatingContainer{
+                max-width: 100%;
+            }
+        }
+        @media only screen and (max-width: 450px) {
+            .toCenterRating{
+                width: 200px;
+                height: 75px;
+            }
+            .avgRating4Small{
+                float: none;
+                margin-left: 25px;
+            }
+            .ratingHide4Large{
+                display: block;
+            }
+            .ratingHide4Small{
+                display: none;
+            }
+        }
+        @media (max-width: 456px) {
+            .ratingHr{
+                margin-top: 75px;
+            }
+        }
+        @media (max-width: 400px) {
+            .reviewSide, .reviewMiddle {
+                width: 100%;
+            }
+            .reviewRight {
+                display: none;
+            }
+        }
+     
+    </style>
+
+    <!-- Copyright CSS -->
+    <style>
+        .copyrightBG{
+            background-image: linear-gradient(to top right, rgba(255,255,150,1), rgba(255,255,0,1));
+        }
+        .copyrightIcons{
+            display: block;
+        }
+        .socialLinksCopyright{
+            display: none; 
+            text-align: center; 
+            position: relative;
+            padding: 60px;
+            padding-top: 20px;
+            padding-bottom: 12px;
+            /* px-5 pt-3 pb-2  */
+        }
+        .socialLinksCopyrightBg{
+            background: lightblue; 
+            position: absolute; 
+            left: 0; 
+            top: 0;
+            opacity: 0.5;
+        }
+        .socialLinkIconCopyright{
+            border:2px solid #212121;
+            font-size: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: #212121;
+        }
+        .puzzle{
+            position: relative;
+            font-size: 20px;
+        }
+        .puzzle:hover{
+            font-size: 22px;
+            bottom: 2px;;
+        }
+        #dragDiv {
+            position: absolute;
+            z-index: 9;
+            background-color: #f1f1f1;
+            text-align: center;
+            border: 1px solid #d3d3d3;
+        }
+
+        #dragDivHeader {
+            padding: 10px;
+            cursor: move;
+            z-index: 10;
+            background-color: #2196F3;
+            color: #fff;
+        }
+
+        @media only screen and (max-width: 666px) {
+            .copyrightIcons{
+                display: none;
+            }
+            .socialLinksCopyright{
+                display: block; 
+            }
+        }
+        @media only screen and (max-width: 525px) {
+            .socialLinkIconCopyright{
+                font-size: 18px;
+                text-decoration: none;
+                color: #212121;
+            }
+            .socialLinksCopyright{
+                padding: 0px;
+            }
+            .socialLinksCopyrightBg{
+                display: none;
+            }
+        }
+    </style>
+    
+    
+</head>
+<body class="fadeBody fadeTransition">
+    <!-- SECTION : HOME -->
+    <div id="home" class="view colorF1F1F1" style="">
+        <div class="text-center mask pattern-8 flex-center flex-column full-bg-img">
+            <h1 class="">
+                <span class="leftName name">Mohamed</span>
+                <span class="mainName name">Maaz</span>
+                <span class="rightName name">Shaikh</span>  
+            </h1>
+            <h5 class="afterName name">Bachelor of Engineering in Computer</h5>
+            <button type="button" onclick="navigation(1)" class="learnMoreBtn btn p-2 position-absolute">
+                <!-- btn-info => class to be added on hover -->
+                Learn more
+                <br>
+                <i class="fas fa-chevron-down cc_pointer"></i>
+            </button>
+        </div>
+
+    </div>
+
+    <!-- SECTION : SOCIAL LINKS -->
+    <div id="socialMedia" class="sidebar colorF1F1F1 animated slideInUp">
+        <div class="col-sm-12 h-100 d-table">
+            <div class="d-table-cell align-middle animated bounce slower" style="text-align: center;">
+                <!--Facebook-->
+                <a href="https://www.facebook.com/mmaaz.shaikh.3/" class="socialLink animated bounce infinite slower delay-1s btn-floating btn-lg btn-fb white-text" type="button" role="button" target="_blank" style="background: #3B5998;"><i class="fab fa-facebook-f"></i></a>
+                <!--Twitter-->
+                <a href="https://twitter.com/Mr_M_Maaz" class="socialLink animated bounce infinite slower delay-2s btn-floating btn-lg btn-tw white-text" type="button" role="button" target="_blank" style="background: #55ACEE;"><i class="fab fa-twitter"></i></a>
+                <!--Google +-->
+                <!-- <a class="btn-floating btn-lg btn-gplus" type="button" role="button" style="background:  #dd4b39;"><i class="fab fa-google"></i></a> -->
+                <!--Linkedin-->
+                <a href="https://www.linkedin.com/in/mohd-maaz-1335b4185/" class="socialLink animated bounce slower delay-3s infinite btn-floating btn-lg btn-li white-text" type="button" role="button" target="_blank" style="background:  #007bb5;"><i class="fab fa-linkedin-in"></i></a>
+                <!--Instagram-->
+                <a href="https://www.instagram.com/shaikhms71/" class="socialLink animated bounce infinite slower delay-4s btn-floating btn-lg btn-ins white-text" type="button" role="button" target="_blank" style="background: #f09433;"><i class="fab fa-instagram"></i></a>
+                <!--Github-->
+                <a href="https://github.com/smaazs71" class="socialLink animated bounce infinite slower delay-5s btn-floating btn-lg btn-git white-text" type="button" role="button" target="_blank" style="background: #333333;"><i class="fab fa-github"></i></a>
+                <!--WhatsApp-->
+                <!-- <a class="btn-floating btn-lg btn-whatsapp" type="button" role="button" target="_blank" style="background:  #25d366;"><i class="fab fa-whatsapp"></i></a> -->
+                <!--Stack Overflow-->
+                <!-- <a class="btn-floating btn-lg btn-so" type="button" role="button" style="background: #ffac44;"><i class="fab fa-stack-overflow"></i></a> -->
+                <!--Youtube-->
+                <!-- <a class="btn-floating btn-lg btn-yt" type="button" role="button" style="background: #ed302f;"><i class="fab fa-youtube"></i></a> -->
+                <!-- Snapchat ghost -->
+                <!-- <a class="btn-floating btn-lg btn-scghost" type="button" role="button" style="background: #fffc00; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;"><i class="fab fa-snapchat-ghost cc_pointer"></i></a> -->
+                <!-- Skype -->
+                <!-- <a class="btn-floating btn-lg btn-sk" type="button" role="button" style="background: #00aff0;"><i class="fab fa-skype cc_pointer"></i> </a> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION : NAVIGATION -->
+    <div id="navigation" class="sidebar colorF1F1F1 ">
+        <div class="h-100 d-table float-right mr-2">
+            <div class="d-table-cell align-middle" style="text-align: center;">
+                <div>
+                    <div>
+                        <i class="fas fa-circle cc_pointer float-right m-1" onclick="navigation(0)"></i>    
+                        <h6 class="hide float-right mr-2">Home</h6>
+                    </div>
+                    <br>
+                </div>
+                <br>
+                <div>
+                    <div>
+                        <i class="fas fa-circle cc_pointer float-right m-1" onclick="navigation(1)"></i>    
+                        <h6 class="hide float-right mr-2">Skills</h6>
+                    </div>
+                    <br>
+                </div>
+                <br>
+                <div>
+                    <div>
+                        <i class="fas fa-circle cc_pointer float-right m-1" onclick="navigation(2)"></i>    
+                        <h6 class="hide float-right mr-2">Projects</h6>
+                    </div>
+                    <br>
+                </div>
+                <br>
+                <div>
+                    <div>
+                        <i class="fas fa-circle cc_pointer float-right m-1" onclick="navigation(3)"></i>    
+                        <h6 class="hide float-right mr-2">Qualification</h6>
+                    </div>
+                    <br>
+                </div>
+                <br>
+                <div>
+                    <div>
+                        <i class="fas fa-circle cc_pointer float-right m-1" onclick="navigation(4)"></i>    
+                        <h6 class="hide float-right mr-2">Resume</h6>
+                    </div>
+                    <br>
+                </div>
+                <br>
+                <div>
+                    <div>
+                        <i class="fas fa-circle cc_pointer float-right m-1" onclick="navigation(5)"></i>    
+                        <h6 class="hide float-right mr-2">Contact</h6>
+                    </div>
+                    <br>
+                </div>
+                <br>
+                <div>
+                    <div>
+                        <i class="fas fa-circle cc_pointer float-right m-1" onclick="navigation(6)"></i>    
+                        <h6 class="hide float-right mr-2">Review and Rating</h6>
+                    </div>
+                    <br>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+    
+    <!-- SECTION : MOBILE NAVIGATION -->
+    <div id="mobileNavigation">
+        <!-- Button trigger modal -->
+            <button type="button" style=" background: ;" class="menuButton opacity btn btn-primary m-4 py-1 px-2" data-toggle="modal" data-target="#exampleModalCenter">
+                <i class="fas fa-bars"></i>
+            </button>
+        
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+        
+            <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 style="" class="modal-title bolder" id="exampleModalLongTitle">Menu</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-body text-center" style="cursor: pointer;">
+                            <h5 class="opacity" onclick="navigation(0)" data-dismiss="modal">HOME</h5>
+                            <hr>
+                            <h5 class="opacity" onclick="navigation(1)" data-dismiss="modal">SKILLS</h5>
+                            <hr>
+                            <h5 class="opacity" onclick="navigation(2)" data-dismiss="modal">PROJECTS</h5>
+                            <hr>
+                            <h5 class="opacity" onclick="navigation(3)" data-dismiss="modal">QUALIFICATIONS</h5>
+                            <hr>
+                            <h5 class="opacity" onclick="navigation(4)" data-dismiss="modal">RESUME</h5>
+                            <hr>
+                            <h5 class="opacity" onclick="navigation(5)" data-dismiss="modal">CONTACT</h5>
+                            <hr>
+                            <h5 class="opacity" onclick="navigation(6)"  data-dismiss="modal">REVIEW & RATING</h5>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION : SKILLS -->
+    <div id="skills" class="" style="min-height:100%;">
+        <div class="skillDiv transformAngle container">
+            <h1 class="pt-4 font4VW" style=""><b><u>Skills</u></b></h1>
+            <div class="container m-4">
+                <div class="row">
+                    <div class="languageDiv col-md-6">
+                        <h2 class="font3VW mb-3"><b><u>Languages</u></b></h2>
+                        <!-- <div class="row border col-md-6 w-50 mb-4"></div> -->
+                        <img src="assets/images/javaLogo.png" class="opacity languageImg img-fluid z-depth-1 rounded-circle" alt="Responsive image" data-aos="flip-left" data-aos-delay="0" data-aos-easing="ease-in-out-sine">
+                    
+                        <img src="assets/images/pythonLogo.jpg" class="opacity languageImg img-fluid z-depth-1 rounded-circle" alt="Responsive image" data-aos="flip-left" data-aos-delay="100" data-aos-easing="ease-in-out-sine">
+
+                        <img src="assets/images/nodeJsLogo.png" class="opacity languageImg img-fluid z-depth-1 rounded-circle" alt="Responsive image" data-aos="flip-left" data-aos-easing="ease-in-out-sine" data-aos-delay="200">
+                        
+                        <img src="assets/images/htmlLogo.png" class="opacity languageImg img-fluid z-depth-1 rounded-circle" alt="Responsive image" data-aos="flip-left" data-aos-delay="300" data-aos-easing="ease-in-out-sine">
+                        
+                        <img src="assets/images/cssLogo.png" class="opacity languageImg img-fluid z-depth-1 rounded-circle" alt="Responsive image" data-aos="flip-left" data-aos-delay="400" data-aos-easing="ease-in-out-sine">
+                        
+                        <img src="assets/images/javascriptLogo.jpg" class="opacity languageImg img-fluid z-depth-1 rounded-circle" alt="Responsive image" data-aos="flip-left" data-aos-delay="500" data-aos-easing="ease-in-out-sine">
+                        
+                        <img src="assets/images/phpLogo.png" class="opacity languageImg img-fluid z-depth-1 rounded-circle" alt="Responsive image" data-aos="flip-left" data-aos-delay="600" data-aos-easing="ease-in-out-sine">
+                        
+                        <img src="assets/images/cLogo.png" class="opacity languageImg img-fluid z-depth-1 rounded-circle" alt="Responsive image" data-aos="flip-left" data-aos-delay="700" data-aos-easing="ease-in-out-sine">
+                        
+                        <img src="assets/images/xmlLogo.png" class="opacity languageImg img-fluid z-depth-1 rounded-circle" alt="Responsive image" data-aos="flip-left" data-aos-delay="800" data-aos-easing="ease-in-out-sine">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="view my-3">
+                            <h2 class="font3VW"><b><u>Tools</u></b></h2>
+                            <!-- <div class="border w-25 mb-4"></div> -->
+                            <div style="margin-top: 18px;">
+                                <i class="opacity fab fa-android m-1 toolsFont" data-aos="flip-left" data-aos-delay="0" data-aos-easing="ease-in-out-sine"></i>
+                                <i class="opacity fab fa-github cc_pointer m-1 toolsFont" data-aos="flip-left" data-aos-delay="100" data-aos-easing="ease-in-out-sine"></i>
+                                <i class="opacity fab fa-aws cc_pointer m-1 toolsFont" data-aos="flip-left" data-aos-delay="200" data-aos-easing="ease-in-out-sine"></i>
+                                <i class="opacity fab fa-wordpress cc_pointer m-1 toolsFont" data-aos="flip-left" data-aos-delay="300" data-aos-easing="ease-in-out-sine"></i>
+                                <i class="opacity fab fa-wix cc_pointer m-1 toolsFont" data-aos="flip-left" data-aos-delay="400" data-aos-easing="ease-in-out-sine"></i>
+                                <svg class="opacity m-1 mb-4 toolsFont" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                    height="40px" width="40px"  data-aos="flip-left" data-aos-delay="500" data-aos-easing="ease-in-out-sine"       
+                                    viewBox="0 0 172 172"
+                                    style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="#212121"></path><g fill="#ffffff"><path d="M152.24408,18.34552l-42.69728,-11.352c-0.66048,-0.17544 -1.36224,-0.15136 -2.00208,0.07224l-88.02272,30.272c-1.38976,0.47816 -2.322,1.78536 -2.322,3.25424v83.248v4.128v3.6636v0.0344c0,1.24872 0.98384,2.53528 2.322,2.99624l88.02272,30.272c0.3612,0.1204 0.7396,0.18576 1.118,0.18576c0.29584,0 0.59512,-0.03784 0.88408,-0.11352l42.69728,-11.352c1.50672,-0.40248 2.55592,-1.76816 2.55592,-3.32648v-128.656c0,-1.55832 -1.0492,-2.924 -2.55592,-3.32648zM103.2,37.24488v101.59008l-75.15368,-9.91752l24.73704,-9.07128c1.35536,-0.49536 2.25664,-1.78536 2.25664,-3.23016v-69.4364z"></path></g></g>
+                                </svg>
+                                <svg class="opacity m-1 mb-4" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                    width="40px" height="40px" data-aos="flip-left" data-aos-delay="600" data-aos-easing="ease-in-out-sine"
+                                    viewBox="0 0 172 172"
+                                    style=" fill:#000000;"><defs><linearGradient x1="75.87708" y1="35.93008" x2="92.708" y2="119.1745" gradientUnits="userSpaceOnUse" id="color-1_Of4lZV2lwBQI_gr1"><stop offset="0" stop-color="#ffffff"></stop><stop offset="0.998" stop-color="#ffffff"></stop></linearGradient></defs><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="#212121"></path><g fill="url(#color-1_Of4lZV2lwBQI_gr1)"><path d="M129,129c-17.98117,0 -33.77292,-13.82808 -43,-27.64183c-9.22708,13.81375 -25.01883,27.64183 -43,27.64183c-23.71092,0 -43,-19.28908 -43,-43c0,-23.71092 19.28908,-43 43,-43c21.26708,0 35.41767,15.93867 43,27.78875c7.58233,-11.85008 21.73292,-27.78875 43,-27.78875c23.71092,0 43,19.28908 43,43c0,23.71092 -19.28908,43 -43,43zM93.81525,86.13258c5.90175,12.81758 20.85142,28.53408 35.18475,28.53408c15.80608,0 28.66667,-12.86058 28.66667,-28.66667c0,-15.80608 -12.86058,-28.66667 -28.66667,-28.66667c-19.40733,0 -31.53692,21.33517 -35.18475,28.79925zM43,57.33333c-15.80608,0 -28.66667,12.86058 -28.66667,28.66667c0,15.80608 12.86058,28.66667 28.66667,28.66667c14.39425,0 29.40483,-15.8455 35.19908,-28.53408c-3.53317,-7.23475 -15.68783,-28.79925 -35.19908,-28.79925zM57.33333,87.79167v-3.58333c0,-0.989 -0.80267,-1.79167 -1.79167,-1.79167h-25.08333c-0.989,0 -1.79167,0.80267 -1.79167,1.79167v3.58333c0,0.989 0.80267,1.79167 1.79167,1.79167h25.08333c0.989,0 1.79167,-0.80267 1.79167,-1.79167zM141.54167,82.41667h-8.95833v-8.95833c0,-0.989 -0.80267,-1.79167 -1.79167,-1.79167h-3.58333c-0.989,0 -1.79167,0.80267 -1.79167,1.79167v8.95833h-8.95833c-0.989,0 -1.79167,0.80267 -1.79167,1.79167v3.58333c0,0.989 0.80267,1.79167 1.79167,1.79167h8.95833v8.95833c0,0.989 0.80267,1.79167 1.79167,1.79167h3.58333c0.989,0 1.79167,-0.80267 1.79167,-1.79167v-8.95833h8.95833c0.989,0 1.79167,-0.80267 1.79167,-1.79167v-3.58333c0,-0.989 -0.80267,-1.79167 -1.79167,-1.79167z"></path></g></g>
+                                </svg>
+                                <svg class="opacity m-1 mb-4" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                    width="40px" height="40px" data-aos="flip-left" data-aos-delay="700" data-aos-easing="ease-in-out-sine"
+                                    viewBox="0 0 172 172"
+                                    style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="#212121"></path><g fill="#ffffff"><path d="M151.64219,86.71219l9.70188,-16.43406c0.38969,-0.81969 0.44344,-1.76031 0.14781,-2.60688l-19.21563,-55.04c-0.59125,-1.67969 -2.35156,-2.63375 -4.05812,-2.21719l-56.47781,13.76c-1.075,0.26875 -1.96188,1.03469 -2.37844,2.06937l-6.00656,15.03656h-18.31531c-0.95406,0 -1.88125,0.40313 -2.52625,1.10188l-41.28,44.72c-1.27656,1.38406 -1.20937,3.53406 0.14781,4.82406l43.29562,41.28c0.63156,0.61813 1.49156,0.95406 2.365,0.95406h19.73969l6.02,15.03656c0.44344,1.11531 1.43781,1.90812 2.60687,2.10969l60.06563,10.32c0.18812,0.04031 0.38969,0.05375 0.57781,0.05375c1.59906,0 3.01,-1.10187 3.35938,-2.70094l12.18781,-55.83281c0.18812,-0.86 0.04031,-1.76031 -0.43,-2.52625zM73.35531,41.28l48.4825,-8.88219l-25.51781,50.16219h-57.90219zM76.79531,134.16l-38.3775,-37.84h57.90219l30.1,45.29781zM138.93031,133.81063l-28.85031,-44.37063l25.22219,-50.16219l16.34,47.44781z"></path></g></g>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="frameworkDiv col-sm-6 py-4">
+                                <h3 class="font2VW"><b><u>Frameworks</u></b></h3>
+                                <!-- <div class="border mb-3 " style="width:90%;"></div> -->
+                                <h5 class="opacity font1_5VW" data-aos="slide-up" data-aos-delay="0" data-aos-easing="ease-in-out-sine">Bootstrap</h5>
+                                <h5 class="opacity font1_5VW" data-aos="slide-up" data-aos-delay="200" data-aos-easing="ease-in-out-sine">JQuery</h5>
+                                <h5 class="opacity font1_5VW" data-aos="slide-up" data-aos-delay="400" data-aos-easing="ease-in-out-sine">React</h5>
+                                <h5 class="opacity font1_5VW" data-aos="slide-up" data-aos-delay="600" data-aos-easing="ease-in-out-sine">Vue</h5>
+                            </div>
+                            <div class="databaseDiv col-sm-6 py-4">
+                                <h3 class="font2VW"><b><u>Database</u></b></h3>
+                                <!-- <div class="border w-75 mb-3"></div> -->
+                                <h5 class="opacity font1_5VW" data-aos="slide-up" data-aos-delay="0" data-aos-easing="ease-in-out-sine">MySQL</h5>
+                                <h5 class="opacity font1_5VW" data-aos="slide-up" data-aos-delay="200" data-aos-easing="ease-in-out-sine">Mongodb</h5>
+                                <h5 class="opacity font1_5VW" data-aos="slide-up" data-aos-delay="400" data-aos-easing="ease-in-out-sine">xml</h5>
+                                <h5 class="opacity font1_5VW" data-aos="slide-up" data-aos-delay="600" data-aos-easing="ease-in-out-sine">API</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION : PROJECTS -->
+    <div id="projects"style="" class="view">
+        <div class="text-center flex-center flex-column full-bg-img">
+            <div class="container">
+                <div class="mt-5" style="position: relative; text-align: center;">
+                    <h1 class="projectTitle" style="font-weight: bold; color:white;">
+                        Projects
+                    </h1>
+                    <div style="margin-left: auto; margin-right: auto; width: 100px; height: 2px; background: lightblue;"></div>
+                    <div class="m-5" style="background: lightblue; border-radius: 5px; opacity: 0.5;">
+                        <p class="font2VW py-3 px-4" style="opacity: 1; font-weight: 400; color: black;">
+                            Utilize my knowledge and skills and  given opportunity effectively for professional growth and for the betterment for organization and self.
+                        </p>
+                    </div>
+                
+                    <svg class="projectArrowUp" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        width="40" height="40"
+                        viewBox="0 0 172 172"
+                        style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M144.74517,146.91667h-117.49033c-4.66908,0 -8.84725,-2.41517 -11.18,-6.45717c-2.33275,-4.042 -2.33275,-8.87233 0,-12.91433l58.74517,-101.74517v0c2.33275,-4.042 6.51092,-6.45358 11.18,-6.45358c4.66908,0 8.84725,2.41158 11.18,6.45358l58.74517,101.74875c2.33275,4.042 2.33275,8.87233 0,12.91433c-2.33275,4.042 -6.5145,6.45358 -11.18,6.45358z"></path></g></g>
+                    </svg>
+                        
+                </div>
+                
+                <!-- Row 1 -->
+                <div class="row justify-content-sm-center" style="position: relative;">
+
+                    <!-- Left Column -->
+                    <div id="textProjectColumn" style="" class="containerFlip projectColumn col white-text" data-aos="zoom-in-right" data-aos-delay="0" data-aos-easing="ease-in-out" data-aos-offset="350">
+                      <div class='flip_box'>
+    
+                        <div class='front' style="">
+                   
+                      <h5 class="mb-3 font2VW" style="max-width: 85%;">
+                            <b>
+                                <u>Smart Home Automation using AI</u>
+                            </b>
+                        </h5>
+                        <h5 class="mb-2 font1_7VW" style="color: lightblue; max-width: 85%;">
+                            Technology: Android, NodeMCU, Web-development
+                        </h5>
+                        <p class="font1_5VW" style="text-align: justify;">
+                            Home Automation system using Android App with AI and NodeMCU (ESP8266 Wifi module).
+                            With features like Speech recognition, Command Store, Floating widget service and Automatic scheduling system.
+                        </p>
+                        <h5 id="dateInTextColumn" class="font1_7VW" style="color: lightblue;">
+                            July 2019 - Sep 2020
+                        </h5>
+                        <div class="mt-2 text-center">
+                            <a href="https://github.com/smaazs71/Smart-Home-Automation-using-AI">
+                                <button type="button" class="btn btn-primary">Learn More</button>
+                            </a>
+                        </div>
+                      </div>
+    
+                      <div class='back flex-center' style='background: #212121; text-align: center;'>
+                        <img class="projectGIF" src="assets/images/GIFSmartHomeAutomation.gif" style="max-width: 100%; max-height: 100%; margin: auto;">
+                        <!-- <h1 class='b_headline'>Absolute safety</h1>
+                        <p class='b_text'>Comprehensive insurance of apartments
+                        <button class='b_button'><span>Buy now</span></button> -->
+                      </div>
+                  
+                    </div>
+                 
+                        <div class='r_wrap'>
+    
+                          <div class='s_round'>
+                            <div class='s_arrow'></div>
+                          </div>
+                          <div class='b_round'></div>
+                        </div>
+                     
+                      </div>
+
+                    <!-- Center Line -->
+                    <div class="projectCenterLine">
+                    </div>
+                    <!-- Center Point -->
+                    <svg class="projectCenterPoint" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        viewBox="0 0 172 172"
+                        style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,14.33333c-39.58041,0 -71.66667,32.08626 -71.66667,71.66667c0,39.58041 32.08626,71.66667 71.66667,71.66667c39.58041,0 71.66667,-32.08626 71.66667,-71.66667c0,-39.58041 -32.08626,-71.66667 -71.66667,-71.66667z"></path></g></g>
+                    </svg>
+                    
+                    <!-- Right Column -->
+                    <div id="displayProjectColumn" class="projectColumn col" style="margin-top: auto; margin-bottom: auto;" data-aos="slide-left" data-aos-delay="0" data-aos-easing="ease-in-out-sine" data-aos-offset="150">
+                        <div class="d-flex align-items-center white-text">
+                        <h5 class="font2_2VW" style="margin: auto;">
+                            <b>July 2019 - Sep 2020</b>
+                        </h5>
+                        </div>    
+                    </div>
+
+                </div>
+                                
+                <!-- Row 2 -->
+                <div class="row justify-content-sm-center" style="position: relative;">
+
+                    <!-- Left Column -->
+                    <div id="displayProjectColumn" class="projectColumn col" style="margin-top: auto; margin-bottom: auto;" data-aos="slide-right" data-aos-delay="0" data-aos-easing="ease-in-out-sine" data-aos-offset="150">
+                        <div class="d-flex align-items-center white-text">
+                        <h5 class="font2_2VW" style="margin: auto;">
+                            <b>Jan 2020 - Feb 2020</b>
+                        </h5>
+                        </div>    
+                    </div>
+
+                    <!-- Center Line -->
+                    <div class="projectCenterLine">
+                    </div>
+                    <!-- Center Point -->
+                    <svg class="projectCenterPoint" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        viewBox="0 0 172 172"
+                        style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,14.33333c-39.58041,0 -71.66667,32.08626 -71.66667,71.66667c0,39.58041 32.08626,71.66667 71.66667,71.66667c39.58041,0 71.66667,-32.08626 71.66667,-71.66667c0,-39.58041 -32.08626,-71.66667 -71.66667,-71.66667z"></path></g></g>
+                    </svg>
+                    
+                    <!-- Right Column -->
+                    <div id="textProjectColumn" style="" class="containerFlip projectColumn col white-text" data-aos="zoom-in-left" data-aos-delay="0" data-aos-easing="ease-in-out" data-aos-offset="300">
+                      <div class='flip_box'>
+    
+                        <div class='front' style="">
+                   
+                          <h5 class="mb-3 font2VW" style="max-width: 85%;">
+                            <b>
+                                <u>RCOE Print</u>
+                            </b>
+                          </h5>
+                          <h5 class="mb-2 font1_7VW" style="color: lightblue; max-width: 85%;">
+                            Technology: AWS, PHP, Bootstrap
+                          </h5>
+                          <p class="font1_5VW" style="text-align: justify;">
+                              A website in PHP that allows a user to store their documents and print from there itself.
+                          </p>
+                          <h5 id="dateInTextColumn" class="font1_7VW" style="color: lightblue;">
+                              Jan 2020 - Feb 2020
+                          </h5>
+                          <div class="mt-2 text-center">
+                              <a href="https://github.com/smaazs71/online-printing-service">
+                                  <button type="button" class="btn btn-primary">Learn More</button>
+                              </a>
+                          </div>
+                        </div>
+    
+                        <div class='back flex-center' style='background: #212121; text-align: center;'>
+                            <img class="projectGIF" src="assets/images/GIFRcoePrint.gif" style="max-width: 100%; max-height: 100%; margin: auto;">
+                            <!-- <h1 class='b_headline'>Absolute safety</h1>
+                            <p class='b_text'>Comprehensive insurance of apartments
+                            <button class='b_button'><span>Buy now</span></button> -->
+                        </div>
+                  
+                      </div>
+                      <div class='r_wrap'>
+    
+                          <div class='s_round'>
+                            <div class='s_arrow'></div>
+                          </div>
+                          <div class='b_round'></div>
+                      </div>
+                    </div>
+
+                </div>
+
+                <!-- Row 3 -->
+                <div class="row justify-content-sm-center" style="position: relative;">
+
+                    <!-- Left Column -->
+                    <div id="textProjectColumn" style="" class="containerFlip projectColumn col white-text" data-aos="zoom-in-right" data-aos-delay="0" data-aos-easing="ease-in-out" data-aos-offset="300">
+                      <div class='flip_box'>
+    
+                        <div class='front' style="">
+                   
+                          <h5 class="mb-3 font2VW" style="max-width: 85%;">
+                            <b>
+                                <u>Id proof Prediction and Extraction of data</u>
+                            </b>
+                          </h5>
+                          <h5 class="mb-2 font1_7VW" style="color: lightblue; max-width: 85%;">
+                              Technology: Python, Google Colab, Machine Learning
+                          </h5>
+                          <p class="font1_5VW" style="text-align: justify;">
+                              A machine learning program executed in python that predicts the type of Identity proof and extracts the data from it.
+                          </p>
+                          <h5 id="dateInTextColumn" class="font1_7VW" style="color: lightblue;">
+                              Jan 2019 - Mar 2019
+                          </h5>
+                          <div class="mt-2 text-center">
+                              <a href="https://github.com/smaazs71/Id-proof-Prediction-and-Extraction-of-data">
+                                  <button type="button" class="btn btn-primary">Learn More</button>
+                              </a>
+                          </div>
+                        </div>
+    
+                        <div class='back flex-center' style='background: #212121; text-align: center;'>
+                            <img class="projectGIF" src="assets/images/GIFIdPredictionGif.gif" style="max-width: 100%; max-height: 100%; margin: auto;">
+                            <!-- <h1 class='b_headline'>Absolute safety</h1>
+                            <p class='b_text'>Comprehensive insurance of apartments
+                            <button class='b_button'><span>Buy now</span></button> -->
+                        </div>
+                      </div>
+               
+                      <div class='r_wrap'>
+  
+                        <div class='s_round'>
+                          <div class='s_arrow'></div>
+                        </div>
+                        <div class='b_round'></div>
+                      </div>
+                    </div>
+
+                    <!-- Center Line -->
+                    <div class="projectCenterLine">
+                    </div>
+                    <!-- Center Point -->
+                    <svg class="projectCenterPoint" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        viewBox="0 0 172 172"
+                        style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,14.33333c-39.58041,0 -71.66667,32.08626 -71.66667,71.66667c0,39.58041 32.08626,71.66667 71.66667,71.66667c39.58041,0 71.66667,-32.08626 71.66667,-71.66667c0,-39.58041 -32.08626,-71.66667 -71.66667,-71.66667z"></path></g></g>
+                    </svg>
+                    
+                    <!-- Right Column -->
+                    <div id="displayProjectColumn" class="projectColumn col" style="margin-top: auto; margin-bottom: auto;" data-aos="slide-left" data-aos-delay="0" data-aos-easing="ease-in-out-sine" data-aos-offset="150">
+                        <div class="d-flex align-items-center white-text">
+                        <h5 class="font2_2VW" style="margin: auto;">
+                            <b>Jan 2019 - Mar 2019</b>
+                        </h5>
+                        </div>    
+                    </div>
+
+                </div>
+           
+                <!-- Row 4 -->
+                <div class="row justify-content-sm-center" style="position: relative;">
+
+                    <!-- Left Column -->
+                    <div id="displayProjectColumn" class="projectColumn col" style="margin-top: auto; margin-bottom: auto;" data-aos="slide-right" data-aos-delay="0" data-aos-easing="ease-in-out-sine" data-aos-offset="150">
+                        <div class="d-flex align-items-center white-text">
+                        <h5 class="font2_2VW" style="margin: auto;">
+                            <b>July 2018 - Oct 2018</b>
+                        </h5>
+                        </div>    
+                    </div>
+
+                    <!-- Center Line -->
+                    <div class="projectCenterLine">
+                    </div>
+                    <!-- Center Point -->
+                    <svg class="projectCenterPoint" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        viewBox="0 0 172 172"
+                        style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,14.33333c-39.58041,0 -71.66667,32.08626 -71.66667,71.66667c0,39.58041 32.08626,71.66667 71.66667,71.66667c39.58041,0 71.66667,-32.08626 71.66667,-71.66667c0,-39.58041 -32.08626,-71.66667 -71.66667,-71.66667z"></path></g></g>
+                    </svg>
+                    
+                    <!-- Right Column -->
+                    <div id="textProjectColumn" style="" class="containerFlip projectColumn col white-text" data-aos="zoom-in-left" data-aos-delay="0" data-aos-easing="ease-in-out" data-aos-offset="275">
+                      <div class='flip_box'>
+    
+                        <div class='front' style="">
+                   
+                          <h5 class="mb-3 font2VW" style="max-width: 85%;">
+                            <b>
+                                <u>Minip</u>
+                            </b>
+                          </h5>
+                          <h5 class="mb-2 font1_7VW" style="color: lightblue; max-width: 85%;">
+                              Technology: PHP, jQuery, MySQL
+                          </h5>
+                          <p class="font1_5VW" style="text-align: justify;">
+                              A website similar to Amazon E-Commerce website, designed using PHP.
+                          </p>
+                          <h5 id="dateInTextColumn" class="font1_7VW" style="color: lightblue;">
+                              July 2018 - Oct 2018
+                          </h5>
+                          <div class="mt-2 text-center">
+                              <a href="https://github.com/smaazs71/minip">
+                                  <button type="button" class="btn btn-primary">Learn More</button>
+                              </a>
+                          </div>
+                        </div>
+    
+                        <div class='back flex-center' style='background: #212121; text-align: center;'>
+                            <img class="projectGIF" src="assets/images/GIFMinip.gif" style="max-width: 100%; max-height: 100%; margin: auto;">
+                            <!-- <h1 class='b_headline'>Absolute safety</h1>
+                            <p class='b_text'>Comprehensive insurance of apartments
+                            <button class='b_button'><span>Buy now</span></button> -->
+                        </div>
+                
+                      </div>
+               
+                      <div class='r_wrap'>
+  
+                        <div class='s_round'>
+                          <div class='s_arrow'></div>
+                        </div>
+                        <div class='b_round'></div>
+                      </div>
+                   
+                    </div>
+
+                </div>
+
+                <!-- Row 5 -->
+                <div class="row justify-content-sm-center" style="position: relative;">
+
+                    <!-- Left Column -->
+                    <div id="textProjectColumn" style="" class="containerFlip projectColumn col white-text" data-aos="zoom-in-right" data-aos-delay="0" data-aos-easing="ease-in-out" data-aos-offset="300">
+                      <div class='flip_box'>
+    
+                        <div class='front' style="">
+                   
+                          <h5 class="mb-3 font2VW" style="max-width: 85%;">
+                            <b>
+                                <u>Maze Game</u>
+                            </b>
+                          </h5>
+                          <h5 class="mb-2 font1_7VW" style="color: lightblue; max-width: 85%;">
+                              Technology: C Programming Language
+                          </h5>
+                          <p class="font1_5VW" style="text-align: justify;">
+                              Using graphics library in C++ this program generates a different Maze game everytime you play based on certain changeable parameters.
+                          </p>
+                          <h5 id="dateInTextColumn" class="font1_7VW" style="color: lightblue;">
+                              Feb 2018 - Mar 2018
+                          </h5>
+                          <div class="mt-2 text-center">
+                              <a href="https://github.com/smaazs71/Maze-Game">
+                                  <button type="button" class="btn btn-primary">Learn More</button>
+                              </a>
+                          </div>
+                        </div>
+    
+                        <div class='back' style='background: #212121; text-align: center;'>
+                            <img class="projectGIF" src="assets/images/IdPredictionGif.gif" height="100%" style="margin: auto;">
+                            <!-- <h1 class='b_headline'>Absolute safety</h1>
+                            <p class='b_text'>Comprehensive insurance of apartments
+                            <button class='b_button'><span>Buy now</span></button> -->
+                        </div>
+                      </div>
+             
+                      <div class='r_wrap'>
+
+                        <div class='s_round'>
+                          <div class='s_arrow'></div>
+                        </div>
+                        <div class='b_round'></div>
+                      </div>
+                    </div>
+
+                    <!-- Center Line -->
+                    <div class="projectCenterLine">
+                    </div>
+                    <!-- Center Point -->
+                    <svg class="projectCenterPoint" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        viewBox="0 0 172 172"
+                        style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,14.33333c-39.58041,0 -71.66667,32.08626 -71.66667,71.66667c0,39.58041 32.08626,71.66667 71.66667,71.66667c39.58041,0 71.66667,-32.08626 71.66667,-71.66667c0,-39.58041 -32.08626,-71.66667 -71.66667,-71.66667z"></path></g></g>
+                    </svg>
+                    
+                    <!-- Right Column -->
+                    <div id="displayProjectColumn" class="projectColumn col" style="margin-top: auto; margin-bottom: auto;" data-aos="slide-left" data-aos-delay="0" data-aos-easing="ease-in-out-sine" data-aos-offset="150">
+                        <div class="d-flex align-items-center white-text">
+                        <h5 class="font2_2VW" style="margin: auto;">
+                            <b>Feb 2018 - Mar 2018</b>
+                        </h5>
+                        </div>    
+                    </div>
+
+                </div>
+           
+                <!-- Row 6 -->
+                <div class="row justify-content-sm-center" style="position: relative;">
+
+                    <!-- Left Column -->
+                    <div id="displayProjectColumn" class="projectColumn col" style="margin-top: auto; margin-bottom: auto;" data-aos="slide-right" data-aos-delay="0" data-aos-easing="ease-in-out-sine" data-aos-offset="150">
+                        <div class="d-flex align-items-center white-text">
+                        <h5 class="font2_2VW" style="margin: auto;">
+                            <b>July 2017 - Oct 2017</b>
+                        </h5>
+                        </div>    
+                    </div>
+
+                    <!-- Center Line -->
+                    <div class="projectCenterLine">
+                    </div>
+                    <!-- Center Point -->
+                    <svg class="projectCenterPoint" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        viewBox="0 0 172 172"
+                        style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,14.33333c-39.58041,0 -71.66667,32.08626 -71.66667,71.66667c0,39.58041 32.08626,71.66667 71.66667,71.66667c39.58041,0 71.66667,-32.08626 71.66667,-71.66667c0,-39.58041 -32.08626,-71.66667 -71.66667,-71.66667z"></path></g></g>
+                    </svg>
+                    
+                    <!-- Right Column -->
+                    <div id="textProjectColumn" style="" class="containerFlip projectColumn col white-text" data-aos="zoom-in-left" data-aos-delay="0" data-aos-easing="ease-in-out" data-aos-offset="300">
+                      <div class='flip_box'>
+    
+                        <div class='front' style="">
+                   
+                          <h5 class="mb-3 font2VW" style="max-width: 85%;">
+                            <b>
+                                <u>Tic Tac Toe Game</u>
+                            </b>
+                          </h5>
+                          <h5 class="mb-2 font1_7VW" style="color: lightblue; max-width: 85%;">
+                              Technology: Java
+                          </h5>
+                          <p class="font1_5VW" style="text-align: justify;">
+                              A Java program with AI which allows you to play Tic tac toe game with the program or a person.
+                          </p>
+                          <h5 id="dateInTextColumn" class="font1_7VW" style="color: lightblue;">
+                              July 2017 - Oct 2017
+                          </h5>
+                          <div class="mt-2 text-center">
+                            <a href="https://github.com/smaazs71/Tic-Tac-Toe">
+                                <button type="button" class="btn btn-primary">Learn More</button>
+                            </a>
+                          </div>
+                        </div>
+    
+                        <!-- <div class='back' style='background: url("assets/images/home.gif")no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover;-o-background-size: cover; background-size: cover;'>
+                          <h1 class='b_headline'>Absolute safety</h1>
+                          <p class='b_text'>Comprehensive insurance of apartments
+                          <button class='b_button'><span>Buy now</span></button>
+                        </div> -->
+                        <div class='back' style='background: #212121; text-align: center;'>
+                            <img class="projectGIF" src="assets/images/GIFTicTacToe.gif" height="100%" style="margin: auto;">
+                            <!-- <h1 class='b_headline'>Absolute safety</h1>
+                            <p class='b_text'>Comprehensive insurance of apartments
+                            <button class='b_button'><span>Buy now</span></button> -->
+                        </div>
+                    
+                      </div>
+                   
+                      <div class='r_wrap'>
+  
+                        <div class='s_round'>
+                          <div class='s_arrow'></div>
+                        </div>
+                        <div class='b_round'></div>
+                      </div>
+                    
+                    </div>
+    
+                </div>
+                <!-- Rows end -->
+            </div>
+            <!-- Container End -->
+        </div>
+        <!-- Bg image End -->
+    </div>
+
+    <!-- SECTION : QUALIFICATIONS -->
+    <div id="qualification" style="min-height: 650px; overflow: hidden; background: #212121;">
+
+        <div class="slideshow-container">
+
+            <div class="mySlides" style="left:0%; padding: 0px;">
+                <div class="card mb-2">
+                    <img class="card-img-top" src="assets/images/St_Andrews_High_School_GIF.gif" alt="Card image cap">
+                    <!-- <div class="mask rgba-white-slight"></div> -->
+
+                    <div class="card-body" style="border-top: 1px solid #212121;">
+                        <h4 class="card-title font-weight-bold">Saint Andrew's high school</h4>
+                      <h6 class="card-header-subtitle mb-0 pb-2 pt-0 mt-0">S.S.C (Maharashtra Board)</h6>
+                    <hr>
+                      <h6 class="card-text m-3">
+                          <p  class="float-left"><b>Marks: 77.09%</b></p>
+                            <p class="float-right"><b>Jun 2001 - Mar 2013</b></p>
+                      </h6>
+                      <a class="btn btn-primary btn-md btn-rounded mt-5" href="https://saintandrewschoolbandra.in">Visit</a>
+                    </div>
+                  </div>
+                </div>
+            
+            <div class="mySlides">
+                <div class="card mb-2">
+                    <img class="card-img-top" src="assets/images/Rizvi_College_Of_Asc_GIF.gif" alt="Card image cap">
+                    <div class="card-body" style="border-top: 1px solid #212121;">
+                      <h4 class="card-title font-weight-bold">Rizvi college of ASC</h4>
+                      <h6 class="card-header-subtitle mb-0 pb-2 pt-0 mt-0">H.S.C (Maharashtra Board)</h6>
+                      <hr>
+                      <h6 class="card-text m-3">
+                          <p  class="float-left"><b>Marks: 64.31%</b></p>
+                            <p class="float-right"><b>July 2013 - Feb 2015</b></p>
+                      </h6>
+                      <a class="btn btn-primary btn-md btn-rounded mt-5" href="http://www.rizvicollege.edu.in/">Visit</a>
+                    </div>
+                  </div>
+                </div>
+            
+            <div class="mySlides">
+                <div class="card mb-2">
+                    <img class="card-img-top" src="assets/images/Rcoe_GIF.gif" alt="Card image cap">
+                    <div class="card-body" style="border-top: 1px solid #212121;">
+                      <h4 class="card-title font-weight-bold">Rizvi college of Engineering</h4>
+                      <h6 class="card-header-subtitle mb-0 pb-2 pt-0 mt-0">University of Mumbai</h6>
+                      <hr>
+                      <h6 class="card-text m-3">
+                          <p  class="float-left"><b>Marks: 74.37%</b></p>
+                            <p class="float-right"><b>July 2016 - Oct 2020</b></p>
+                      </h6>
+                      <a class="btn btn-primary btn-md btn-rounded mt-5" href="https://eng.rizvi.edu.in/">Visit</a>
+                    </div>
+                  </div>
+                </div>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+                <span class="dot" onclick="showSlide(1)"></span> 
+                <span class="dot" onclick="showSlide(2)"></span> 
+                <span class="dot" onclick="showSlide(3)"></span> 
+              </div>
+    </div>
+   
+    <!-- SECTION : RESUME -->
+    <div id="resume"  class="" style="height: 20%; margin-bottom: -20px;">
+        <div class="transformAngle view text-center mt-5 d-flex" style="height: 100%; background: #ffff66;" data-toggle="modal" data-target="#exampleModalCenterResume">
+            <div class="col-md-6 card-title font-weight-bold" style="margin: auto; color: #212121;">
+                View Resume           
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenterResume" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+            <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document" style="">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 style="" class="modal-title bolder" id="exampleModalLongTitle">Resume</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <embed src="assets/Resume/resumeMaaz.pdf" class="resume" style="">
+                    </div>
+                    <div class="modal-footer">
+                        <a href="assets/Resume/resumeMaaz.pdf" download>
+                            <button type="button" class="btn btn-primary">Download</button>
+                        </a>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION : CONTACT -->
+    <div id="contactDiv" class="m-0">
+        <div style="" class="mask rgba-black-strong full-bg-img pb-2">
+    <!-- transform-origin: center center 1; transform: translateZ(-1px) scale(1.1); z-index: -1; -->
+            <div class="contactContainer container pt-3 white-text">
+
+                <section class="my-5">
+
+                    <h2 class="h1-responsive font-weight-bold text-center my-4">GET IN TOUCH!</h2>
+
+                    <p class="text-center w-responsive mx-auto pb-5 mb-5">Whether you have an idea for a project or just want to chat, feel free to shoot me an email!.</p>
+            
+                <!-- Grid row -->
+                <div class="row">
+            
+                <!-- Grid column -->
+                <div class="col-lg-5 mb-lg-0 mb-4">
+            
+                    <!-- Form with header -->
+                    <div class="card" style="">
+                    <div class="card-body">
+                        <!-- Header -->
+                        <div class="form-header blue accent-1" style="position:absolute; width:80%; left: 10%; border-radius: 4px; top: -50px">
+                        <h3 class="mt-2 p-3 white-text border-radius"><i class="fas fa-envelope"></i> Write in:</h3>
+                        </div>
+                        <br>
+                        <p class="dark-grey-text">I'll write rarely, but only the best content.</p>
+                        <!-- Body -->
+                        <div class="md-form">
+                        <i style="background: none;" class="fas fa-user prefix grey-text"></i>
+                        <input type="text" name="name" id="form-name" class="form-control">
+                        <label style="background: none;" for="form-name">Your name</label>
+                        </div>
+                        <div class="md-form">
+                        <i style="background: none;" class="fas fa-envelope prefix grey-text"></i>
+                        <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" id="form-email" class="form-control">
+                        <label style="background: none;" for="form-email">Your email</label>
+                        </div>
+                        <div class="md-form">
+                        <i style="background: none;" class="fas fa-tag prefix grey-text"></i>
+                        <input type="text" name="subject" id="form-Subject" class="form-control">
+                        <label style="background: none;" for="form-Subject">Subject</label>
+                        </div>
+                        <div class="md-form">
+                        <i style="background: none;" class="fas fa-pencil-alt prefix grey-text"></i>
+                        <textarea id="form-text" name="message" class="form-control md-textarea" rows="3"></textarea>
+                        <label style="background: none;" for="form-text">Send message</label>
+                        </div>
+                        <div class="text-center">
+                        <input type="submit" name="submit" id="contactSubmit" class="btn btn-light-blue" value="Submit">
+                        </div>
+                    </div>
+                    </div>
+                    <!-- Form with header -->
+            
+                </div>
+                <!-- Grid column -->
+            
+                <!-- Grid column -->
+                <div class="col-lg-7">
+            
+                    <!--Google map-->
+                    <div id="map-container-section" class="z-depth-1-half map-container-section mb-4" style="height: 400px">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30168.229690625252!2d72.83864827664098!3d19.06247522410944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8e0df82eaeb%3A0x8d3f97514caa21bf!2sMumbai%2C%20Maharashtra%20400051!5e0!3m2!1sen!2sin!4v1608084194628!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d60336.994419610266!2d72.81151099245872!3d19.061004823109013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x3be7c8e114fa5045%3A0xab01b3ce8aa92ac7!2sBandra%20East%2C%20Mumbai%2C%20Maharashtra!3m2!1d19.060927!2d72.8465307!5e0!3m2!1sen!2sin!4v1606973912063!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border-radius:4px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+                        <!-- <iframe src="https://maps.google.com/maps?q=Manhatan&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" -->
+                        <!-- style="border:0" allowfullscreen></iframe> -->
+                    </div>
+                    <!-- Buttons-->
+                    <div class="row text-center">
+                    <div class="col-md-4">
+                        <a class="btn-floating blue accent-1 p-2 rounded-circle">
+                        <i class="fas fa-map-marker-alt p-2"></i>
+                        </a>
+                        <p class="m-0">Bandra, Mumbai</p>
+                        <!-- <p class="mb-md-0 m-0">Mumabi</p> -->
+                    </div>
+                    <div class="col-md-4">
+                        <a class="btn-floating blue accent-1 p-2 rounded-circle">
+                        <i class="fas fa-phone p-2"></i>
+                        </a>
+                        <p class="m-0">+91 9372326937</p>
+                        <!-- <p class="mb-md-0">Mon - Fri, 8:00-22:00</p> -->
+                    </div>
+                    <div class="col-md-4">
+                        <a class="btn-floating blue accent-1 p-2 rounded-circle">
+                        <i class="fas fa-envelope p-2"></i>
+                        </a>
+                        <p class="m-0">smaazs71@gmail.com</p>
+                        <!-- <p class="mb-0">sale@gmail.com</p> -->
+                    </div>
+                    </div>
+            
+                </div>
+                <!-- Grid column -->
+            
+                </div>
+                <!-- Grid row -->
+            
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION: REVIEW AND RATING -->
+    <div id="reviewRatingDiv" class="white-text pb-5" style="min-height: 100%;">
+        <div id="reviewRatingContainer" style="" class="container pb-5">
+            <div id="review&RatingTitle" class="card-title">
+                
+                <h1 style="font-size: 35px;" class="transformAngle h1-responsive bolder py-5 px-1">
+                    <u>Reviews and Rating</u>
+                </h1>
+            </div>
+            <div class="row">
+                <div id="ratingDiv" class="col-xl-6 mb-xl-0 mb-5 pb-5" style="">
+                    <div id="ratingTitle" class="card-title text-center">
+                        <h1 class="transformAngle h1-responsive bolder py-0 px-2" style="font-size: 30px; margin: auto;">Rate Portfolio</h1>
+                    </div>
+                    <hr class="transformAngle" style="margin-top: 35px; border:1px solid #f1f1f1; max-width: 800px;">
+
+                    <div id="UXRating" class="px-2 py-3" style="">
+                        <div class="toCenterRating">
+                            <div id="stars" class="float-left" style="">                                
+                                <div class="star uxStar" style="">
+                                    <div class="starBg" style=""></div>
+                                    <div class="starClickBg" style=""></div>
+                                    <div class="starDescription card" style="">                
+                                        <svg class="starDescriptionArrow" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                            width="24" height="24"
+                                            viewBox="0 0 172 172"
+                                            style="top:-20%"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"     text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M144.74517,146.91667h-117.49033c-4.66908,0 -8.84725,-2.41517 -11.18,-6.45717c-2.33275,-4.042 -2.33275,-8.87233 0,-12.91433l58.74517,-101.74517v0c2.33275,-4.042 6.51092,-6.45358 11.18,-6.45358c4.66908,0 8.84725,2.41158 11.18,6.45358l58.74517,101.74875c2.33275,4.042 2.33275,8.87233 0,12.91433c-2.33275,4.042 -6.5145,6.45358 -11.18,6.45358z"></path></g></g>
+                                        </svg>
+                                        <div class="card-body m-0 p-0 text-center" style="z-index: 2; margin: auto;">
+                                            <h6 class="card-text p-2" style="font-weight: bolder;">
+                                                Very Bad
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                        width="40" height="40"
+                                        viewBox="0 0 172 172"
+                                        style="fill:#000000; z-index: 1; position: relative;"><g  fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#212121"><path d="M0,0v172h172v-172zM130.28776,154.16732l-44.28776,-26.56706l-44.28776,26.56706l11.58984,-50.33464l-38.96875,-33.92969l51.45443,-4.53515l20.21224,-47.53516l20.21224,47.53516l51.45442,4.53515l-38.94076,33.92969z"></path></g></g>
+                                    </svg>
+                                </div> 
+                                <div class="star uxStar" style="">
+                                    <div class="starBg" style=""></div>
+                                    <div class="starClickBg" style=""></div>
+                                    <div class="starDescription card" style="">                
+                                        <svg class="starDescriptionArrow" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                            width="24" height="24"
+                                            viewBox="0 0 172 172"
+                                            style=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"     text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M144.74517,146.91667h-117.49033c-4.66908,0 -8.84725,-2.41517 -11.18,-6.45717c-2.33275,-4.042 -2.33275,-8.87233 0,-12.91433l58.74517,-101.74517v0c2.33275,-4.042 6.51092,-6.45358 11.18,-6.45358c4.66908,0 8.84725,2.41158 11.18,6.45358l58.74517,101.74875c2.33275,4.042 2.33275,8.87233 0,12.91433c-2.33275,4.042 -6.5145,6.45358 -11.18,6.45358z"></path></g></g>
+                                        </svg>
+                                        <div class="card-body m-0 p-0 text-center" style="z-index: 2; margin: auto;">
+                                            <h6 class="card-text p-2" style="font-weight: bolder;">
+                                                Poor
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                        width="40" height="40"
+                                        viewBox="0 0 172 172"
+                                        style="fill:#000000; z-index: 1; position: relative;"><g  fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#212121"><path d="M0,0v172h172v-172zM130.28776,154.16732l-44.28776,-26.56706l-44.28776,26.56706l11.58984,-50.33464l-38.96875,-33.92969l51.45443,-4.53515l20.21224,-47.53516l20.21224,47.53516l51.45442,4.53515l-38.94076,33.92969z"></path></g></g>
+                                    </svg>
+                                </div> 
+                                <div class="star uxStar" style="">
+                                    <div class="starBg" style=""></div>
+                                    <div class="starClickBg" style=""></div>
+                                    <div class="starDescription card" style="">                
+                                        <svg class="starDescriptionArrow" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                            width="24" height="24"
+                                            viewBox="0 0 172 172"
+                                            style=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"     text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M144.74517,146.91667h-117.49033c-4.66908,0 -8.84725,-2.41517 -11.18,-6.45717c-2.33275,-4.042 -2.33275,-8.87233 0,-12.91433l58.74517,-101.74517v0c2.33275,-4.042 6.51092,-6.45358 11.18,-6.45358c4.66908,0 8.84725,2.41158 11.18,6.45358l58.74517,101.74875c2.33275,4.042 2.33275,8.87233 0,12.91433c-2.33275,4.042 -6.5145,6.45358 -11.18,6.45358z"></path></g></g>
+                                        </svg>
+                                        <div class="card-body m-0 p-0 text-center" style="z-index: 2; margin: auto;">
+                                            <h6 class="card-text p-2" style="font-weight: bolder;">
+                                                Ok
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                        width="40" height="40"
+                                        viewBox="0 0 172 172"
+                                        style="fill:#000000; z-index: 1; position: relative;"><g  fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#212121"><path d="M0,0v172h172v-172zM130.28776,154.16732l-44.28776,-26.56706l-44.28776,26.56706l11.58984,-50.33464l-38.96875,-33.92969l51.45443,-4.53515l20.21224,-47.53516l20.21224,47.53516l51.45442,4.53515l-38.94076,33.92969z"></path></g></g>
+                                    </svg>
+                                </div> 
+                                <div class="star uxStar" style="">
+                                    <div class="starBg" style=""></div>
+                                    <div class="starClickBg" style=""></div>
+                                    <div class="starDescription card" style="">                
+                                        <svg class="starDescriptionArrow" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                            width="24" height="24"
+                                            viewBox="0 0 172 172"
+                                            style=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"     text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M144.74517,146.91667h-117.49033c-4.66908,0 -8.84725,-2.41517 -11.18,-6.45717c-2.33275,-4.042 -2.33275,-8.87233 0,-12.91433l58.74517,-101.74517v0c2.33275,-4.042 6.51092,-6.45358 11.18,-6.45358c4.66908,0 8.84725,2.41158 11.18,6.45358l58.74517,101.74875c2.33275,4.042 2.33275,8.87233 0,12.91433c-2.33275,4.042 -6.5145,6.45358 -11.18,6.45358z"></path></g></g>
+                                        </svg>
+                                        <div class="card-body m-0 p-0 text-center" style="z-index: 2; margin: auto;">
+                                            <h6 class="card-text p-2" style="font-weight: bolder;">
+                                                Good
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                        width="40" height="40"
+                                        viewBox="0 0 172 172"
+                                        style="fill:#000000; z-index: 1; position: relative;"><g  fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#212121"><path d="M0,0v172h172v-172zM130.28776,154.16732l-44.28776,-26.56706l-44.28776,26.56706l11.58984,-50.33464l-38.96875,-33.92969l51.45443,-4.53515l20.21224,-47.53516l20.21224,47.53516l51.45442,4.53515l-38.94076,33.92969z"></path></g></g>
+                                    </svg>
+                                </div> 
+                                <div class="star uxStar" style="">
+                                    <div class="starBg" style=""></div>
+                                    <div class="starClickBg" style=""></div>
+                                    <div class="starDescription card" style="">                
+                                        <svg class="starDescriptionArrow" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                            width="24" height="24"
+                                            viewBox="0 0 172 172"
+                                            style=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"     text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M144.74517,146.91667h-117.49033c-4.66908,0 -8.84725,-2.41517 -11.18,-6.45717c-2.33275,-4.042 -2.33275,-8.87233 0,-12.91433l58.74517,-101.74517v0c2.33275,-4.042 6.51092,-6.45358 11.18,-6.45358c4.66908,0 8.84725,2.41158 11.18,6.45358l58.74517,101.74875c2.33275,4.042 2.33275,8.87233 0,12.91433c-2.33275,4.042 -6.5145,6.45358 -11.18,6.45358z"></path></g></g>
+                                        </svg>
+                                        <div class="card-body m-0 p-0 text-center" style="z-index: 2; margin: auto;">
+                                            <h6 class="card-text p-2" style="font-weight: bolder;">
+                                                Excellent
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                        width="40" height="40"
+                                        viewBox="0 0 172 172"
+                                        style="fill:#000000; z-index: 1; position: relative;"><g  fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#212121"><path d="M0,0v172h172v-172zM130.28776,154.16732l-44.28776,-26.56706l-44.28776,26.56706l11.58984,-50.33464l-38.96875,-33.92969l51.45443,-4.53515l20.21224,-47.53516l20.21224,47.53516l51.45442,4.53515l-38.94076,33.92969z"></path></g></g>
+                                    </svg>
+                                </div> 
+                                <div class="text-center white-text">
+                                    <h6 class="h6-responsive">
+                                        <div class="ratingText">You gave 5 Star Rating for</div>
+                                        <div class="ratingHide4Large">UX / UI</div></h6>
+                                </div>
+                            </div>
+                            <div id="" class="ratingHide4Small float-left">
+                                <h4 style="font-size: 25px;" class="transformAngle h4-responsive mt-2 py-2 pl-3 white-text bolder">UI / UX</h4>
+                            </div>
+                        </div>
+                    <!-- UX Rating Closed -->                    
+                    </div>        
+
+                    <div id="ResponsivenessRating" class="px-2 py-3" style="">
+                        <div class="toCenterRating">
+                            <div id="stars" class="float-left" style="">
+                                <div class="star" style="">
+                                    <div class="starBg" style=""></div>
+                                    <div class="starClickBg" style=""></div>
+                                    <div class="starDescription card" style="">                
+                                        <svg class="starDescriptionArrow" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                            width="24" height="24"
+                                            viewBox="0 0 172 172"
+                                            style="top:-20%"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"     text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M144.74517,146.91667h-117.49033c-4.66908,0 -8.84725,-2.41517 -11.18,-6.45717c-2.33275,-4.042 -2.33275,-8.87233 0,-12.91433l58.74517,-101.74517v0c2.33275,-4.042 6.51092,-6.45358 11.18,-6.45358c4.66908,0 8.84725,2.41158 11.18,6.45358l58.74517,101.74875c2.33275,4.042 2.33275,8.87233 0,12.91433c-2.33275,4.042 -6.5145,6.45358 -11.18,6.45358z"></path></g></g>
+                                        </svg>
+                                        <div class="card-body m-0 p-0 text-center" style="z-index: 2; margin: auto;">
+                                            <h6 class="card-text p-2" style="font-weight: bolder;">
+                                                Very Bad
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                        width="40" height="40"
+                                        viewBox="0 0 172 172"
+                                        style="fill:#000000; z-index: 1; position: relative;"><g  fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#212121"><path d="M0,0v172h172v-172zM130.28776,154.16732l-44.28776,-26.56706l-44.28776,26.56706l11.58984,-50.33464l-38.96875,-33.92969l51.45443,-4.53515l20.21224,-47.53516l20.21224,47.53516l51.45442,4.53515l-38.94076,33.92969z"></path></g></g>
+                                    </svg>
+                                </div> 
+                                <div class="star" style="">
+                                    <div class="starBg" style=""></div>
+                                    <div class="starClickBg" style=""></div>
+                                    <div class="starDescription card" style="">                
+                                        <svg class="starDescriptionArrow" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                            width="24" height="24"
+                                            viewBox="0 0 172 172"
+                                            style=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"     text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M144.74517,146.91667h-117.49033c-4.66908,0 -8.84725,-2.41517 -11.18,-6.45717c-2.33275,-4.042 -2.33275,-8.87233 0,-12.91433l58.74517,-101.74517v0c2.33275,-4.042 6.51092,-6.45358 11.18,-6.45358c4.66908,0 8.84725,2.41158 11.18,6.45358l58.74517,101.74875c2.33275,4.042 2.33275,8.87233 0,12.91433c-2.33275,4.042 -6.5145,6.45358 -11.18,6.45358z"></path></g></g>
+                                        </svg>
+                                        <div class="card-body m-0 p-0 text-center" style="z-index: 2; margin: auto;">
+                                            <h6 class="card-text p-2" style="font-weight: bolder;">
+                                                Poor
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                        width="40" height="40"
+                                        viewBox="0 0 172 172"
+                                        style="fill:#000000; z-index: 1; position: relative;"><g  fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#212121"><path d="M0,0v172h172v-172zM130.28776,154.16732l-44.28776,-26.56706l-44.28776,26.56706l11.58984,-50.33464l-38.96875,-33.92969l51.45443,-4.53515l20.21224,-47.53516l20.21224,47.53516l51.45442,4.53515l-38.94076,33.92969z"></path></g></g>
+                                    </svg>
+                                </div> 
+                                <div class="star" style="">
+                                    <div class="starBg" style=""></div>
+                                    <div class="starClickBg" style=""></div>
+                                    <div class="starDescription card" style="">                
+                                        <svg class="starDescriptionArrow" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                            width="24" height="24"
+                                            viewBox="0 0 172 172"
+                                            style=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"     text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M144.74517,146.91667h-117.49033c-4.66908,0 -8.84725,-2.41517 -11.18,-6.45717c-2.33275,-4.042 -2.33275,-8.87233 0,-12.91433l58.74517,-101.74517v0c2.33275,-4.042 6.51092,-6.45358 11.18,-6.45358c4.66908,0 8.84725,2.41158 11.18,6.45358l58.74517,101.74875c2.33275,4.042 2.33275,8.87233 0,12.91433c-2.33275,4.042 -6.5145,6.45358 -11.18,6.45358z"></path></g></g>
+                                        </svg>
+                                        <div class="card-body m-0 p-0 text-center" style="z-index: 2; margin: auto;">
+                                            <h6 class="card-text p-2" style="font-weight: bolder;">
+                                                Ok
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                        width="40" height="40"
+                                        viewBox="0 0 172 172"
+                                        style="fill:#000000; z-index: 1; position: relative;"><g  fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#212121"><path d="M0,0v172h172v-172zM130.28776,154.16732l-44.28776,-26.56706l-44.28776,26.56706l11.58984,-50.33464l-38.96875,-33.92969l51.45443,-4.53515l20.21224,-47.53516l20.21224,47.53516l51.45442,4.53515l-38.94076,33.92969z"></path></g></g>
+                                    </svg>
+                                </div> 
+                                <div class="star" style="">
+                                    <div class="starBg" style=""></div>
+                                    <div class="starClickBg" style=""></div>
+                                    <div class="starDescription card" style="">                
+                                        <svg class="starDescriptionArrow" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                            width="24" height="24"
+                                            viewBox="0 0 172 172"
+                                            style=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"     text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M144.74517,146.91667h-117.49033c-4.66908,0 -8.84725,-2.41517 -11.18,-6.45717c-2.33275,-4.042 -2.33275,-8.87233 0,-12.91433l58.74517,-101.74517v0c2.33275,-4.042 6.51092,-6.45358 11.18,-6.45358c4.66908,0 8.84725,2.41158 11.18,6.45358l58.74517,101.74875c2.33275,4.042 2.33275,8.87233 0,12.91433c-2.33275,4.042 -6.5145,6.45358 -11.18,6.45358z"></path></g></g>
+                                        </svg>
+                                        <div class="card-body m-0 p-0 text-center" style="z-index: 2; margin: auto;">
+                                            <h6 class="card-text p-2" style="font-weight: bolder;">
+                                                Good
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                        width="40" height="40"
+                                        viewBox="0 0 172 172"
+                                        style="fill:#000000; z-index: 1; position: relative;"><g  fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#212121"><path d="M0,0v172h172v-172zM130.28776,154.16732l-44.28776,-26.56706l-44.28776,26.56706l11.58984,-50.33464l-38.96875,-33.92969l51.45443,-4.53515l20.21224,-47.53516l20.21224,47.53516l51.45442,4.53515l-38.94076,33.92969z"></path></g></g>
+                                    </svg>
+                                </div> 
+                                <div class="star" style="">
+                                    <div class="starBg" style=""></div>
+                                    <div class="starClickBg" style=""></div>
+                                    <div class="starDescription card" style="">                
+                                        <svg class="starDescriptionArrow" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                            width="24" height="24"
+                                            viewBox="0 0 172 172"
+                                            style=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"     text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M144.74517,146.91667h-117.49033c-4.66908,0 -8.84725,-2.41517 -11.18,-6.45717c-2.33275,-4.042 -2.33275,-8.87233 0,-12.91433l58.74517,-101.74517v0c2.33275,-4.042 6.51092,-6.45358 11.18,-6.45358c4.66908,0 8.84725,2.41158 11.18,6.45358l58.74517,101.74875c2.33275,4.042 2.33275,8.87233 0,12.91433c-2.33275,4.042 -6.5145,6.45358 -11.18,6.45358z"></path></g></g>
+                                        </svg>
+                                        <div class="card-body m-0 p-0 text-center" style="z-index: 2; margin: auto;">
+                                            <h6 class="card-text p-2" style="font-weight: bolder;">
+                                                Excellent
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                        width="40" height="40"
+                                        viewBox="0 0 172 172"
+                                        style="fill:#000000; z-index: 1; position: relative;"><g  fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#212121"><path d="M0,0v172h172v-172zM130.28776,154.16732l-44.28776,-26.56706l-44.28776,26.56706l11.58984,-50.33464l-38.96875,-33.92969l51.45443,-4.53515l20.21224,-47.53516l20.21224,47.53516l51.45442,4.53515l-38.94076,33.92969z"></path></g></g>
+                                    </svg>
+                                </div> 
+                                <div class="text-center white-text">
+                                    <h6 class="h6-responsive">
+                                        <div class="ratingText">You gave 5 Star Rating for</div>
+                                        <div class="ratingHide4Large">Responsiveness</div></h6>
+                                </div>
+                            </div>
+                            <div id="" class="ratingHide4Small float-left">
+                                <h4 style="font-size: 25px;" class="transformAngle h4-responsive mt-2 py-2 pl-3 white-text bolder">Responsiveness</h4>
+                            </div>
+                        </div>
+                    <!-- Responsiveness Rating Closed -->                    
+                    </div>
+                    
+                    <div id="DesignRating" class="px-2 py-3" style="">
+                        <div class="toCenterRating">
+                            <div id="stars" class="float-left" style="">
+                                <div class="star" style="">
+                                    <div class="starBg" style=""></div>
+                                    <div class="starClickBg" style=""></div>
+                                    <div class="starDescription card" style="">                
+                                        <svg class="starDescriptionArrow" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                            width="24" height="24"
+                                            viewBox="0 0 172 172"
+                                            style="top:-20%"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"     text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M144.74517,146.91667h-117.49033c-4.66908,0 -8.84725,-2.41517 -11.18,-6.45717c-2.33275,-4.042 -2.33275,-8.87233 0,-12.91433l58.74517,-101.74517v0c2.33275,-4.042 6.51092,-6.45358 11.18,-6.45358c4.66908,0 8.84725,2.41158 11.18,6.45358l58.74517,101.74875c2.33275,4.042 2.33275,8.87233 0,12.91433c-2.33275,4.042 -6.5145,6.45358 -11.18,6.45358z"></path></g></g>
+                                        </svg>
+                                        <div class="card-body m-0 p-0 text-center" style="z-index: 2; margin: auto;">
+                                            <h6 class="card-text p-2" style="font-weight: bolder;">
+                                                Very Bad
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                        width="40" height="40"
+                                        viewBox="0 0 172 172"
+                                        style="fill:#000000; z-index: 1; position: relative;"><g  fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#212121"><path d="M0,0v172h172v-172zM130.28776,154.16732l-44.28776,-26.56706l-44.28776,26.56706l11.58984,-50.33464l-38.96875,-33.92969l51.45443,-4.53515l20.21224,-47.53516l20.21224,47.53516l51.45442,4.53515l-38.94076,33.92969z"></path></g></g>
+                                    </svg>
+                                </div> 
+                                <div class="star" style="">
+                                    <div class="starBg" style=""></div>
+                                    <div class="starClickBg" style=""></div>
+                                    <div class="starDescription card" style="">                
+                                        <svg class="starDescriptionArrow" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                            width="24" height="24"
+                                            viewBox="0 0 172 172"
+                                            style=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"     text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M144.74517,146.91667h-117.49033c-4.66908,0 -8.84725,-2.41517 -11.18,-6.45717c-2.33275,-4.042 -2.33275,-8.87233 0,-12.91433l58.74517,-101.74517v0c2.33275,-4.042 6.51092,-6.45358 11.18,-6.45358c4.66908,0 8.84725,2.41158 11.18,6.45358l58.74517,101.74875c2.33275,4.042 2.33275,8.87233 0,12.91433c-2.33275,4.042 -6.5145,6.45358 -11.18,6.45358z"></path></g></g>
+                                        </svg>
+                                        <div class="card-body m-0 p-0 text-center" style="z-index: 2; margin: auto;">
+                                            <h6 class="card-text p-2" style="font-weight: bolder;">
+                                                Poor
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                        width="40" height="40"
+                                        viewBox="0 0 172 172"
+                                        style="fill:#000000; z-index: 1; position: relative;"><g  fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#212121"><path d="M0,0v172h172v-172zM130.28776,154.16732l-44.28776,-26.56706l-44.28776,26.56706l11.58984,-50.33464l-38.96875,-33.92969l51.45443,-4.53515l20.21224,-47.53516l20.21224,47.53516l51.45442,4.53515l-38.94076,33.92969z"></path></g></g>
+                                    </svg>
+                                </div> 
+                                <div class="star" style="">
+                                    <div class="starBg" style=""></div>
+                                    <div class="starClickBg" style=""></div>
+                                    <div class="starDescription card" style="">                
+                                        <svg class="starDescriptionArrow" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                            width="24" height="24"
+                                            viewBox="0 0 172 172"
+                                            style=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"     text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M144.74517,146.91667h-117.49033c-4.66908,0 -8.84725,-2.41517 -11.18,-6.45717c-2.33275,-4.042 -2.33275,-8.87233 0,-12.91433l58.74517,-101.74517v0c2.33275,-4.042 6.51092,-6.45358 11.18,-6.45358c4.66908,0 8.84725,2.41158 11.18,6.45358l58.74517,101.74875c2.33275,4.042 2.33275,8.87233 0,12.91433c-2.33275,4.042 -6.5145,6.45358 -11.18,6.45358z"></path></g></g>
+                                        </svg>
+                                        <div class="card-body m-0 p-0 text-center" style="z-index: 2; margin: auto;">
+                                            <h6 class="card-text p-2" style="font-weight: bolder;">
+                                                Ok
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                        width="40" height="40"
+                                        viewBox="0 0 172 172"
+                                        style="fill:#000000; z-index: 1; position: relative;"><g  fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#212121"><path d="M0,0v172h172v-172zM130.28776,154.16732l-44.28776,-26.56706l-44.28776,26.56706l11.58984,-50.33464l-38.96875,-33.92969l51.45443,-4.53515l20.21224,-47.53516l20.21224,47.53516l51.45442,4.53515l-38.94076,33.92969z"></path></g></g>
+                                    </svg>
+                                </div> 
+                                <div class="star" style="">
+                                    <div class="starBg" style=""></div>
+                                    <div class="starClickBg" style=""></div>
+                                    <div class="starDescription card" style="">                
+                                        <svg class="starDescriptionArrow" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                            width="24" height="24"
+                                            viewBox="0 0 172 172"
+                                            style=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"     text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M144.74517,146.91667h-117.49033c-4.66908,0 -8.84725,-2.41517 -11.18,-6.45717c-2.33275,-4.042 -2.33275,-8.87233 0,-12.91433l58.74517,-101.74517v0c2.33275,-4.042 6.51092,-6.45358 11.18,-6.45358c4.66908,0 8.84725,2.41158 11.18,6.45358l58.74517,101.74875c2.33275,4.042 2.33275,8.87233 0,12.91433c-2.33275,4.042 -6.5145,6.45358 -11.18,6.45358z"></path></g></g>
+                                        </svg>
+                                        <div class="card-body m-0 p-0 text-center" style="z-index: 2; margin: auto;">
+                                            <h6 class="card-text p-2" style="font-weight: bolder;">
+                                                Good
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                        width="40" height="40"
+                                        viewBox="0 0 172 172"
+                                        style="fill:#000000; z-index: 1; position: relative;"><g  fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#212121"><path d="M0,0v172h172v-172zM130.28776,154.16732l-44.28776,-26.56706l-44.28776,26.56706l11.58984,-50.33464l-38.96875,-33.92969l51.45443,-4.53515l20.21224,-47.53516l20.21224,47.53516l51.45442,4.53515l-38.94076,33.92969z"></path></g></g>
+                                    </svg>
+                                </div> 
+                                <div class="star" style="">
+                                    <div class="starBg" style=""></div>
+                                    <div class="starClickBg" style=""></div>
+                                    <div class="starDescription card" style="">                
+                                        <svg class="starDescriptionArrow" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                            width="24" height="24"
+                                            viewBox="0 0 172 172"
+                                            style=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"     text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M144.74517,146.91667h-117.49033c-4.66908,0 -8.84725,-2.41517 -11.18,-6.45717c-2.33275,-4.042 -2.33275,-8.87233 0,-12.91433l58.74517,-101.74517v0c2.33275,-4.042 6.51092,-6.45358 11.18,-6.45358c4.66908,0 8.84725,2.41158 11.18,6.45358l58.74517,101.74875c2.33275,4.042 2.33275,8.87233 0,12.91433c-2.33275,4.042 -6.5145,6.45358 -11.18,6.45358z"></path></g></g>
+                                        </svg>
+                                        <div class="card-body m-0 p-0 text-center" style="z-index: 2; margin: auto;">
+                                            <h6 class="card-text p-2" style="font-weight: bolder;">
+                                                Excellent
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                        width="40" height="40"
+                                        viewBox="0 0 172 172"
+                                        style="fill:#000000; z-index: 1; position: relative;"><g  fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#212121"><path d="M0,0v172h172v-172zM130.28776,154.16732l-44.28776,-26.56706l-44.28776,26.56706l11.58984,-50.33464l-38.96875,-33.92969l51.45443,-4.53515l20.21224,-47.53516l20.21224,47.53516l51.45442,4.53515l-38.94076,33.92969z"></path></g></g>
+                                    </svg>
+                                </div> 
+                                <div class="text-center white-text">
+                                    <h6 class="h6-responsive">
+                                        <div class="ratingText">You gave 5 Star Rating for</div>
+                                        <div class="ratingHide4Large">Design</div></h6>
+                                </div>
+                            </div>
+                            <div id="" class="ratingHide4Small float-left">
+                                <h4 style="font-size: 25px;" class="transformAngle h4-responsive mt-2 py-2 pl-3 white-text bolder">Design</h4>
+                            </div>
+                        </div>
+                    <!-- Design Rating Closed -->                    
+                    </div>        
+
+                    <hr class="transformAngle" style="color: white; background: white; max-width: 500px;">
+                                
+                    <input type="number" value="5" class="ratingValue" style="display: none;">
+                    <input type="number" value="5" class="ratingValue" style="display: none;">
+                    <input type="number" value="5" class="ratingValue" style="display: none;">
+                    <input type="number" value="5" class="ratingValue" style="display: none;">
+
+                    <div id="ResponsivenessRating" class="px-2 py-3" style="">
+                        <div class="toCenterRating">
+                            <div id="stars" class="float-left" style="">
+                                <div class="star" style="">
+                                    <div class="starClickBg" style=""></div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                        width="40" height="40"
+                                        viewBox="0 0 172 172"
+                                        style="fill:#000000; z-index: 1; position: relative;"><g  fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#212121"><path d="M0,0v172h172v-172zM130.28776,154.16732l-44.28776,-26.56706l-44.28776,26.56706l11.58984,-50.33464l-38.96875,-33.92969l51.45443,-4.53515l20.21224,-47.53516l20.21224,47.53516l51.45442,4.53515l-38.94076,33.92969z"></path></g></g>
+                                    </svg>
+                                </div> 
+                                <div class="star" style="">
+                                    <div class="starClickBg" style=""></div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                        width="40" height="40"
+                                        viewBox="0 0 172 172"
+                                        style="fill:#000000; z-index: 1; position: relative;"><g  fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#212121"><path d="M0,0v172h172v-172zM130.28776,154.16732l-44.28776,-26.56706l-44.28776,26.56706l11.58984,-50.33464l-38.96875,-33.92969l51.45443,-4.53515l20.21224,-47.53516l20.21224,47.53516l51.45442,4.53515l-38.94076,33.92969z"></path></g></g>
+                                    </svg>
+                                </div> 
+                                <div class="star" style="">
+                                    <div class="starClickBg" style=""></div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                        width="40" height="40"
+                                        viewBox="0 0 172 172"
+                                        style="fill:#000000; z-index: 1; position: relative;"><g  fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#212121"><path d="M0,0v172h172v-172zM130.28776,154.16732l-44.28776,-26.56706l-44.28776,26.56706l11.58984,-50.33464l-38.96875,-33.92969l51.45443,-4.53515l20.21224,-47.53516l20.21224,47.53516l51.45442,4.53515l-38.94076,33.92969z"></path></g></g>
+                                    </svg>
+                                </div> 
+                                <div class="star" style="">
+                                    <div class="starClickBg" style=""></div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                        width="40" height="40"
+                                        viewBox="0 0 172 172"
+                                        style="fill:#000000; z-index: 1; position: relative;"><g  fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#212121"><path d="M0,0v172h172v-172zM130.28776,154.16732l-44.28776,-26.56706l-44.28776,26.56706l11.58984,-50.33464l-38.96875,-33.92969l51.45443,-4.53515l20.21224,-47.53516l20.21224,47.53516l51.45442,4.53515l-38.94076,33.92969z"></path></g></g>
+                                    </svg>
+                                </div> 
+                                <div class="star" style="">
+                                    <div class="starClickBg" style=""></div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                        width="40" height="40"
+                                        viewBox="0 0 172 172"
+                                        style="fill:#000000; z-index: 1; position: relative;"><g  fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#212121"><path d="M0,0v172h172v-172zM130.28776,154.16732l-44.28776,-26.56706l-44.28776,26.56706l11.58984,-50.33464l-38.96875,-33.92969l51.45443,-4.53515l20.21224,-47.53516l20.21224,47.53516l51.45442,4.53515l-38.94076,33.92969z"></path></g></g>
+                                    </svg>
+                                </div> 
+                                <div class="text-center white-text">
+                                    <h6 class="h6-responsive">
+                                        Average Star rating                     
+                                    </h6>
+                                </div>
+                            </div>
+                            <div id="" class="avgRating4Small">
+                                <h1 style="font-size: 35px;" class="transformAngle h1-responsive mt-2 px-4 pb-3 white-text bolder">
+                                    <div class="avgStarValue float-left">5.0</div>
+                                    <div style="position: relative;" class="ratingUpload float-left">
+                                        <div class="ratingUploadDescription card" style="">                
+                                            <svg class="starDescriptionArrow" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                width="24" height="24"
+                                                viewBox="0 0 172 172"
+                                                style="left: 50%; top: -20%;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"     text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M144.74517,146.91667h-117.49033c-4.66908,0 -8.84725,-2.41517 -11.18,-6.45717c-2.33275,-4.042 -2.33275,-8.87233 0,-12.91433l58.74517,-101.74517v0c2.33275,-4.042 6.51092,-6.45358 11.18,-6.45358c4.66908,0 8.84725,2.41158 11.18,6.45358l58.74517,101.74875c2.33275,4.042 2.33275,8.87233 0,12.91433c-2.33275,4.042 -6.5145,6.45358 -11.18,6.45358z"></path></g></g>
+                                            </svg>
+                                            <div class="card-body m-0 p-0 text-center" style="z-index: 2; margin: auto;">
+                                                <h6 class="card-text p-2" style="font-weight: bolder;">
+                                                    Submit Rating
+                                                </h6>
+                                            </div>
+                                        </div>                                           
+                                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                        width="50" height="50"
+                                        viewBox="0 0 172 172"
+                                        class="submitRatingIcon ml-3 pb-2"
+                                        style="cursor: pointer; fill:#000000;"><g transform=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#4285f4"><path d="M99.73313,30.96c-17.42704,0 -32.20824,9.19684 -39.58016,24.295c-3.784,-2.37704 -8.33754,-3.655 -13.22922,-3.655c-12.51128,0 -22.06991,9.51407 -22.83703,22.40031c-15.34584,5.19096 -24.08672,17.36979 -24.08672,33.77515c0,18.34208 14.92245,33.26453 33.26453,33.26453h86.1075l14.5461,29.0586c0.61045,1.21919 1.88331,1.96282 3.24514,1.89589c1.36183,-0.06693 2.55564,-0.93179 3.0436,-2.20496l11.72422,-30.66438c11.69345,-4.31121 20.0689,-15.53133 20.0689,-28.7025c0,-5.17785 -1.29424,-10.15193 -3.50719,-14.61328l3.27875,-8.57984c0.39773,-1.03764 0.26977,-2.2035 -0.34356,-3.13017c-0.61333,-0.92667 -1.6365,-1.50002 -2.74706,-1.53936c-0.46092,-0.01514 -0.92017,0.06255 -1.35047,0.22844l-6.76578,2.58672c-4.54967,-4.07563 -10.11613,-6.88479 -16.13844,-7.7064c0.03784,-0.68112 0.05375,-1.34203 0.05375,-1.98875c0,-25.0776 -19.65552,-44.72 -44.74687,-44.72zM154.71937,94.97625l-35.41453,35.41453l-24.77203,-12.38938zM159.58375,99.84063l-23.01844,60.19328l-12.3961,-24.77875z"></path></g><path d="" fill="none"></path></g></g>
+                                        </svg>
+                                    </div>
+                                </h1>
+                            </div>
+
+                            <!-- <div class="text-center float-left">
+                                <button type="button" style="margin: auto;" class="btn btn-outline-light-blue waves-effect">S</button>
+                            </div> -->
+                        </div>
+                    <!-- Responsiveness Rating Closed -->                    
+                    </div>        
+
+                <!-- Rating Div Closed -->
+                </div>
+                <div id="reviewDiv" class="col-xl-6 py-5 my-5">
+                    <span class="reviewHeading w-0" style="">
+                        <h1 class="transformAngle float-left h1-responsive bolder py-0 px-2" style="font-size: 30px; margin: auto;">
+                            Previous Reviews
+                        </h1>
+                    </span>
+                    <div id="stars" class="float-right" style="">
+                        <div class="star" style="">
+                            <div class="starClickBg" style=""></div>
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                width="35" height="35"
+                                viewBox="0 0 172 172"
+                                style="fill:#000000; z-index: 1; position: relative;"><g  fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#212121"><path d="M0,0v172h172v-172zM130.28776,154.16732l-44.28776,-26.56706l-44.28776,26.56706l11.58984,-50.33464l-38.96875,-33.92969l51.45443,-4.53515l20.21224,-47.53516l20.21224,47.53516l51.45442,4.53515l-38.94076,33.92969z"></path></g></g>
+                            </svg>
+                        </div> 
+                        <div class="star" style="">
+                            <div class="starClickBg" style=""></div>
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                width="35" height="35"
+                                viewBox="0 0 172 172"
+                                style="fill:#000000; z-index: 1; position: relative;"><g  fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#212121"><path d="M0,0v172h172v-172zM130.28776,154.16732l-44.28776,-26.56706l-44.28776,26.56706l11.58984,-50.33464l-38.96875,-33.92969l51.45443,-4.53515l20.21224,-47.53516l20.21224,47.53516l51.45442,4.53515l-38.94076,33.92969z"></path></g></g>
+                            </svg>
+                        </div> 
+                        <div class="star" style="">
+                            <div class="starClickBg" style=""></div>
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                width="35" height="35"
+                                viewBox="0 0 172 172"
+                                style="fill:#000000; z-index: 1; position: relative;"><g  fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#212121"><path d="M0,0v172h172v-172zM130.28776,154.16732l-44.28776,-26.56706l-44.28776,26.56706l11.58984,-50.33464l-38.96875,-33.92969l51.45443,-4.53515l20.21224,-47.53516l20.21224,47.53516l51.45442,4.53515l-38.94076,33.92969z"></path></g></g>
+                            </svg>
+                        </div> 
+                        <div class="star" style="">
+                            <div class="starClickBg" style=""></div>
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                width="35" height="35"
+                                viewBox="0 0 172 172"
+                                style="fill:#000000; z-index: 1; position: relative;"><g  fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#212121"><path d="M0,0v172h172v-172zM130.28776,154.16732l-44.28776,-26.56706l-44.28776,26.56706l11.58984,-50.33464l-38.96875,-33.92969l51.45443,-4.53515l20.21224,-47.53516l20.21224,47.53516l51.45442,4.53515l-38.94076,33.92969z"></path></g></g>
+                            </svg>
+                        </div> 
+                        <div class="star" style="">
+                            <div class="starClickBg" style=""></div>
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                width="35" height="35"
+                                viewBox="0 0 172 172"
+                                style="fill:#000000; z-index: 1; position: relative;"><g  fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#212121"><path d="M0,0v172h172v-172zM130.28776,154.16732l-44.28776,-26.56706l-44.28776,26.56706l11.58984,-50.33464l-38.96875,-33.92969l51.45443,-4.53515l20.21224,-47.53516l20.21224,47.53516l51.45442,4.53515l-38.94076,33.92969z"></path></g></g>
+                            </svg>
+                        </div> 
+                    </div>
+                    <div>
+                        <p class="reviewAvgStarText float-right transformAngle" style="">4.1 average based on 254 reviews.</p>
+                    </div>
+                    <hr class="ratingHr transformAngle" style="">
+                    
+                    <div class="reviewRow transformAngle" style="">
+                      <div class="reviewSide">
+                        <div>5 star</div>
+                      </div>
+                      <div class="reviewMiddle">
+                        <div class="reviewBar-container">
+                          <div class="reviewBar-5"></div>
+                        </div>
+                      </div>
+                      <div class="reviewSide reviewRight">
+                        <div class="review5StarText">150</div>
+                      </div>
+                      <div class="reviewSide">
+                        <div>4 star</div>
+                      </div>
+                      <div class="reviewMiddle">
+                        <div class="reviewBar-container">
+                          <div class="reviewBar-4"></div>
+                        </div>
+                      </div>
+                      <div class="reviewSide reviewRight">
+                        <div class="review4StarText">63</div>
+                      </div>
+                      <div class="reviewSide">
+                        <div>3 star</div>
+                      </div>
+                      <div class="reviewMiddle">
+                        <div class="reviewBar-container">
+                          <div class="reviewBar-3"></div>
+                        </div>
+                      </div>
+                      <div class="reviewSide reviewRight">
+                        <div class="review3StarText">15</div>
+                      </div>
+                      <div class="reviewSide">
+                        <div>2 star</div>
+                      </div>
+                      <div class="reviewMiddle">
+                        <div class="reviewBar-container">
+                          <div class="reviewBar-2"></div>
+                        </div>
+                      </div>
+                      <div class="reviewSide reviewRight">
+                        <div class="review2StarText">6</div>
+                      </div>
+                      <div class="reviewSide">
+                        <div>1 star</div>
+                      </div>
+                      <div class="reviewMiddle">
+                        <div class="reviewBar-container">
+                          <div class="reviewBar-1"></div>
+                        </div>
+                      </div>
+                      <div class="reviewSide reviewRight">
+                        <div class="review1StarText">20</div>
+                      </div>
+                    </div>                  
+                <!-- Review Div Closed -->
+                </div>
+            <!-- Row Div Closed -->
+            </div>
+        <!-- container Closed     -->
+        </div>
+    <!-- SECTION Closed -->
+    </div>
+
+    <div id="copyright" class="" style="">
+        <div class="flex-center copyrightBG px-2 py-5" style="">
+            <div class="text-center">
+                <div class="mb-3 copyrightIcons" style="">
+                    <div class="puzzlePwd"><h5>Password : 4397</h5></div>
+                    <i class="puzzle fas fa-copyright opacity"></i>
+                    <i class="puzzle fas fa-copyright opacity"></i>
+                    <i class="puzzle fas fa-copyright opacity"></i>
+                    <i class="puzzle fas fa-copyright opacity"></i>
+                    <i class="puzzle fas fa-copyright opacity"></i>
+                </div>
+                
+            <div class="mb-2 socialLinksCopyright" style="">
+                <div class="h-100 w-100 rounded-circle socialLinksCopyrightBg" style=""></div>
+                <!--Facebook-->
+                <a href="https://www.facebook.com/mmaaz.shaikh.3/" class="btn-floating btn-lg btn-fb socialLinkIconCopyright" type="button" role="button" target="_blank" style="color: #212121; background: #3B5998;"><i class="fab fa-facebook-f"></i></a>
+                <!--Twitter-->
+                <a href="https://twitter.com/Mr_M_Maaz" class="btn-floating btn-lg btn-tw socialLinkIconCopyright" type="button" role="button" target="_blank" style="color: #212121; background: #55ACEE;"><i class="fab fa-twitter"></i></a>
+                <!--Google +-->
+                <!-- <a class="btn-floating btn-lg btn-gplus socialLinkIconCopyright" type="button" target="_blank" role="button" style="background:  #dd4b39;"><i class="fab fa-google"></i></a> -->
+                <!--Linkedin-->
+                <a href="https://www.linkedin.com/in/mohd-maaz-1335b4185/" class="btn-floating btn-lg btn-li socialLinkIconCopyright" type="button" role="button" target="_blank" style="color: #212121; background: #007bb5;"><i class="fab fa-linkedin-in"></i></a>
+                <!--Instagram-->
+                <a href="https://www.instagram.com/shaikhms71/" class="btn-floating btn-lg btn-ins socialLinkIconCopyright" type="button" role="button" target="_blank" style="color: #212121; background: #f09433;"><i class="fab fa-instagram"></i></a>
+                <!--Github-->
+                <a href="https://github.com/smaazs71" class="btn-floating btn-lg btn-git socialLinkIconCopyright" type="button" role="button" target="_blank" style="background:  #333333; color: #212121;"><i class="fab fa-github"></i></a>
+                <!--WhatsApp-->
+                <!-- <a class="btn-floating btn-lg btn-whatsapp socialLinkIconCopyright" type="button" role="button" style="background:  #25d366;"><i class="fab fa-whatsapp"></i></a> -->
+                <!--Stack Overflow-->
+                <!-- <a class="btn-floating btn-lg btn-so socialLinkIconCopyright" type="button" role="button" style="background: #ffac44;"><i class="fab fa-stack-overflow"></i></a> -->
+                <!--Youtube-->
+                <!-- <a class="btn-floating btn-lg btn-yt socialLinkIconCopyright" type="button" role="button" style="background: #ed302f;"><i class="fab fa-youtube"></i></a> -->
+                <!-- Snapchat ghost -->
+                <!-- <a class="btn-floating btn-lg btn-scghost socialLinkIconCopyright" type="button" role="button" style="background: #fffc00; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;"><i class="fab fa-snapchat-ghost cc_pointer"></i></a> -->
+                <!-- Skype -->
+                <!-- <a class="btn-floating btn-lg btn-sk socialLinkIconCopyright" type="button" role="button" style="background: #00aff0;"><i class="fab fa-skype cc_pointer"></i> </a> -->
+            </div>
+                <h6 class="h6-responsive bolder  mt-2" style="font-size: larger;">
+                    <i style="position: static; font-size: 18px;" class="puzzle far fa-copyright"></i> M Maaz Shaikh 2020
+                </h6>
+            </div>
+            <div id="dragDiv" style="display:none;">
+                <div id="dragDivHeader">Visitors</div>
+                <p id="visits" style="position: absolute; left: 15%; top:45px;">Visits: 12</p>
+                <a href='https://bachelorthesiswritingservice.com/'></a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=0ce282746c9930a9f3e75afc51bc89187918df3b'></script>
+                <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/774187/t/1"></script>
+            </div>
+              
+            
+        </div>
+    </div>
+</body>
+
+    <!-- mdbootstrap -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+    <!-- Toastr library js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+    <!-- Project External JavaScript -->
+    <script src="assets/javascript/externalJS.js"></script>
+
+    <!-- Onload Script -->
+    <script>
+        const body = document.querySelector('body');
+        
+        const fade = () => {
+            setTimeout(() => {
+                body.classList.toggle('fadeBody');
+            }, 500);
+            
+            setTimeout(() => {
+                $(".mainName").css("bottom", "0");
+            },2000);
+            
+            setTimeout(() => {
+                $(".leftName").css("right", "0");
+                $(".rightName").css("left", "0");
+            },3500);
+            
+            setTimeout(() => {
+                $(".afterName").css("top", "0");
+            },4500);
+        
+            setTimeout(() => {
+                $(".learnMoreBtn").css("display", "block");
+            },6000);
+        }
+        body.addEventListener('load', fade());
+
+    </script>
+    
+    <!-- Navigation Script -->
+    <script>
+        function navigation(menuItem){
+            scrolltop = $(document).scrollTop();
+            var scroll;
+            // console.log(height);
+            switch(menuItem){            
+                case 0:
+                        $(document).scrollTop($("#home").offset().top);
+                        break;
+                case 1:
+                        $(document).scrollTop($("#skills").offset().top);
+                        break;
+                case 2:
+                        $(document).scrollTop($("#projects").offset().top);
+                        break;
+                case 3:
+                        $(document).scrollTop($("#qualification").offset().top + 3);
+                        break;
+                case 4:
+                        var height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+                        $(document).scrollTop($("#resume").offset().top - height/2 + height/7);
+                        break;
+                case 5:
+                        $(document).scrollTop($("#contactDiv").offset().top + 50);
+                        break;
+                case 6:
+                        $(document).scrollTop($("#reviewRatingDiv").offset().top);
+                        break;
+                default :
+                        break;
+            }
+        }
+    </script>
+
+    <!-- Slideshow Script -->
+    <script>
+        var slideIndex = 0;
+        var flag = 1;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        
+        showSlide(0);
+        function showSlide(slide){
+          var i;
+          if(slide != 0){
+              if(flag != 2){
+                 flag = 0;
+              }
+            slideIndex = slide;
+          }else{
+            if(flag != 1){return}
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+          }
+  
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.left = "350%";  
+              slides[i].style.padding = "400px";  
+          }
+          slides[slideIndex-1].style.left = "0%";  
+          slides[slideIndex-1].style.padding = "0%";  
+          dots[slideIndex-1].className += " active";
+  
+          if(!flag){
+            setTimeout(function(){ flag = 1; }, 10000);
+            setTimeout(showSlide, 10000, 0); 
+            if(flag == 0){flag = 2;}
+          }else{
+            setTimeout(showSlide, 5000, 0); 
+          }
+        }
+    </script>  
+
+    <!-- Project Script -->
+    <script>
+        window.onscroll = function() {myFunction()};
+        function myFunction() {
+            if($(document).scrollTop()>$("#projects").offset().top - 80){
+                $(".projectTitle").css("color", "red");
+            }else{
+                $(".projectTitle").css("color", "#f1f1f1");
+            }
+        }
+    </script>
+
+    <!-- ProjectFlip Script -->
+    <script>
+    
+        const flipBox = document.querySelectorAll('.flip_box');
+        const sRound = document.querySelectorAll('.s_round');
+        const sArrow = document.querySelectorAll('.s_arrow');
+        const bRound = document.querySelectorAll('.b_round');
+
+        for(i=0; i<sRound.length; i++){
+            sRound[i].sRoundValue = i;
+            sRound[i].addEventListener('click', function(){
+            var index = this.sRoundValue;
+            $(flipBox[index]).toggleClass('flipped');
+            $(this).addClass('s_round_click');
+            $(sArrow[index]).toggleClass('s_arrow_rotate');
+            $(bRound[index]).toggleClass('b_round_back_hover');
+            return false;
+            });
+        }
+
+        $(document).ready(function() {
+
+        var s_round = '.s_round';
+
+        $(s_round).on('transitionend', function() {
+        $(this).removeClass('s_round_click');
+        $(this).addClass('s_round_back');
+        return false;
+        });
+        });
+    </script>
+
+    <!-- Rating Script -->
+    <script>
+        toastr.options = {
+            "closeButton": true,
+            "debug": true,
+            "newestOnTop": true,
+            "progressBar": true,
+            "positionClass": "toast-top-right",
+            "preventDuplicates": false,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "5000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        }
+
+        const stars = document.querySelectorAll('.star');
+        const ratingText = document.querySelectorAll('.ratingText');
+        const ratingValue = document.querySelectorAll('.ratingValue');
+        
+        for(i=0; i<stars.length; i++){
+            stars[i].starValue = i + 1;
+            ['click', 'mouseover', 'mouseout'].forEach(function(e){
+                stars[i].addEventListener(e, showRating);
+            });
+        }
+        function showRating(e){
+            let type = e.type;
+            let starValue = this.starValue;
+            // console.log(ratingText);
+
+            stars.forEach(function(elem, index){
+                var starCategory = parseInt((starValue-1) / 5);
+
+                var firstStarValue = starCategory * 5;
+                var lastStarValue  = firstStarValue + 5;
+
+                var categoryStarValue = starValue - firstStarValue;
+
+                if(type === 'click'){
+                    
+                    ratingText[starCategory].innerHTML = "You gave "+categoryStarValue+" Star Rating for";
+                    ratingValue[starCategory].value = categoryStarValue;
+
+                    if(index < starValue && index >= firstStarValue){
+                        $(elem).find(".starBg").css("height", "0");
+                        $(elem).find(".starClickBg").css("height", "100%");
+                    }else if(index >= starValue && index < lastStarValue){
+                        $(elem).find(".starClickBg").css("height", "0%");    
+                    }
+
+                    let avgRating = 0;
+                    for(j=0; j<(ratingValue.length-1);  j++){
+                        // console.log("ratingValue["+j+"].value = "+ratingValue[j].value);
+                        // console.log("avg = "+avgRating);
+                        avgRating = avgRating + parseInt(ratingValue[j].value);
+                    }
+
+                    // console.log("avg = "+avgRating);
+
+                    avgRating = avgRating / (ratingValue.length  - 1);
+                    // console.log("avg = "+avgRating);
+
+                    ratingValue[3].value = avgRating;
+
+                    var avgStarFull = parseInt(avgRating);
+
+                    var avgStarPartial = parseInt((avgRating - avgStarFull) * 100);
+
+                    console.log("avgPartial = "+avgStarPartial);
+                
+                    if(index < (avgStarFull + 15) && index >= 15){
+                        $(elem).find(".starClickBg").css("height", "100%");
+                    }else if(index >= (avgStarFull + 15) && index < 20){
+                        $(elem).find(".starClickBg").css("height", "0%");    
+                    }
+                    if(index == (avgStarFull + 15))
+                        $(elem).find(".starClickBg").css("height", avgStarPartial+"%");
+
+                    $(".avgStarValue").html(avgStarFull+"."+avgStarPartial);
+
+                    if(starCategory == 2 && index == 24){
+                        toastr.info("Click submit button, If U R done Rating");
+                    }
+                    
+                }
+                if(type === 'mouseover'){
+                    if(index < starValue && index >= firstStarValue){
+                        $(elem).find(".starBg").css("height", "100%");
+                    }else if(index >= starValue && index < lastStarValue){
+                        $(elem).find(".starBg").css("height", "0%");    
+                    }
+                }
+                if(type === 'mouseout'){
+                    $(elem).find(".starBg").css("height", "0");
+                }
+            })
+        }
+        
+    </script>
+       
+    <!-- Contact Script -->
+    <script>
+        $(document).ready(function(){
+            
+            // Submit Contact Message
+            $("#contactSubmit").click(function(){
+
+                var name = $.trim($('#form-name').val());
+                var email = $.trim($('#form-email').val());
+                var subject = $.trim($('#form-Subject').val());
+                var message = $.trim($('#form-text').val());
+
+                if(name == '' || email == '' || subject == '' || message == ''){
+                    toastr.error('Please Fill in all Fields','Error');
+                    return;
+                }
+
+                if(email.includes('@') && email.includes('.', email.indexOf('@')+2) && email.length>(email.indexOf('.')+1) && (email.split("@").length - 1) == 1){
+                }else{
+                    toastr.error('Please Enter a valid Email Address','Error');
+                    return;    
+                }
+
+                $.get("./contact.php?sender=contact&name="+name+"&email="+email+"&subject="+subject+"&message="+message, function(data, status){
+                    toastr.success('Thanks for your help','Your message has been received Successfully');
+
+                    // alert(`Thanks for your help
+                    // Your message has been received Successfully`);
+                    $('#form-name').val('');
+                    $('#form-email').val('');
+                    $('#form-Subject').val('');
+                    $('#form-text').val('');
+                });
+            });
+        });
+
+    </script>
+    
+    <!-- Review and Rating Script -->
+    <script>
+        $(document).ready(function(){
+            
+            UserRating();
+
+            // Submit Ratings
+            $(".submitRatingIcon").click(function(){
+             
+                if (typeof(Storage) !== "undefined") {
+                    if (localStorage.clickcount) {
+                      localStorage.clickcount = Number(localStorage.clickcount)+1;
+                    } else {
+                        localStorage.clickcount = 1;
+                    }
+                    if(Number(localStorage.clickcount)>1)
+                        toastr.error('You  have already rated', 'Error');
+                    else{
+
+                        $.get("./ratings.php?sender=rate&ux="+ratingValue[0].value+"&responsiveness="+ratingValue[1].value+"&design="+ratingValue[2].value+"&average="+ratingValue[3].value, function(data, status){
+                            toastr.success('Thanks for your help', 'Your rating has been saved Successfully');
+
+                            // alert(`Thanks for your help
+                            // Your rating has been saved Successfully`);
+                            UserRating();
+                        });
+                    }
+                }
+
+            });
+        });
+
+        function UserRating(){
+            
+            $.get("./ratings.php?sender=review", function(data, status){
+                var obj = JSON.parse(data);
+       
+                // Each star text
+                $(".review1StarText").html(obj.star1);
+                $(".review2StarText").html(obj.star2);
+                $(".review3StarText").html(obj.star3);
+                $(".review4StarText").html(obj.star4);
+                $(".review5StarText").html(obj.star5);
+
+                // Each star bar
+                $(".reviewBar-1").css("width", (obj.star1/obj.count)*100+"%");
+                $(".reviewBar-2").css("width", (obj.star2/obj.count)*100+"%");
+                $(".reviewBar-3").css("width", (obj.star3/obj.count)*100+"%");
+                $(".reviewBar-4").css("width", (obj.star4/obj.count)*100+"%");
+                $(".reviewBar-5").css("width", (obj.star5/obj.count)*100+"%");
+                
+                var avgStarFullReview = parseInt(obj.avgStar);
+
+                var avgStarPartialReview = parseInt((obj.avgStar - avgStarFullReview) * 100);
+
+                // Average Star text
+                obj.avgStar = avgStarFullReview + avgStarPartialReview / 100;
+                $(".reviewAvgStarText").html(obj.avgStar+" stars, average based on "+obj.count+" reviews.");
+
+                // Average Star Fill
+                stars.forEach(function(elem, index){
+                    if(index < (avgStarFullReview + 20) && index >= 20){
+                        $(elem).find(".starClickBg").css("height", "100%");
+                    }else if(index >= (avgStarFullReview + 20) && index < 25){
+                        $(elem).find(".starClickBg").css("height", "0%");    
+                    }
+                    if(index == (avgStarFullReview + 20))
+                        $(elem).find(".starClickBg").css("height", avgStarPartialReview+"%");
+                });
+            });
+        }
+    </script>
+
+    <!-- Make the DIV element draggagle: -->
+    <script>
+    dragElement(document.getElementById("dragDiv"));
+    
+    function dragElement(elmnt) {
+      var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+      if (document.getElementById(elmnt.id + "Header")) {
+        /* if present, the header is where you move the DIV from:*/
+        document.getElementById(elmnt.id + "Header").onmousedown = dragMouseDown;
+      } else {
+        /* otherwise, move the DIV from anywhere inside the DIV:*/
+        elmnt.onmousedown = dragMouseDown;
+      }
+    
+      function dragMouseDown(e) {
+        e = e || window.event;
+        e.preventDefault();
+        // get the mouse cursor position at startup:
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        document.onmouseup = closeDragElement;
+        // call a function whenever the cursor moves:
+        document.onmousemove = elementDrag;
+      }
+    
+      function elementDrag(e) {
+        e = e || window.event;
+        e.preventDefault();
+        // calculate the new cursor position:
+        pos1 = pos3 - e.clientX;
+        pos2 = pos4 - e.clientY;
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        // set the element's new position:
+        elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+        elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+      }
+    
+      function closeDragElement() {
+        /* stop moving when mouse button is released:*/
+        document.onmouseup = null;
+        document.onmousemove = null;
+      }
+    }
+    </script>
+    
+    <!-- Puzzle Script -->
+    <script>
+        setTimeout(() => {
+            $('#error_0ce282746c9930a9f3e75afc51bc89187918df3b').css('display', 'none');  
+        }, 1500);
+        $.get("./ratings.php?sender=visit", function(data, status){
+            $('#visits').html('Visits: '+data);
+        }); 
+        const puzzle = document.querySelectorAll('.puzzle');
+                
+        var puzzleRandomPassword = Math.floor(Math.random() * 10000);
+        $('.puzzlePwd').html('<h5>Password : '+puzzleRandomPassword+'</h5>');
+        var puzzlePassword = 0;
+        var clicks = 0;
+        for(i=0; i<puzzle.length; i++){
+            puzzle[i].puzzleValue = (i+1);
+            puzzle[i].addEventListener('click', function(){
+                switch(this.puzzleValue){
+                    case 1:
+                        puzzlePassword = puzzlePassword + 1000;
+                        break;
+                    case 2:
+                        puzzlePassword = puzzlePassword + 100;
+                        break;
+                    case 3:
+                        puzzlePassword = 0;
+                        $('#dragDiv').css('display', 'none');
+                        break;
+                    case 4:
+                        puzzlePassword = puzzlePassword + 10;
+                        break;
+                    case 5:
+                        puzzlePassword = puzzlePassword + 1;
+                        break;
+                    case 6:
+                        clicks = 0;
+                        puzzlePassword = 0;
+                        puzzleRandomPassword = Math.floor(Math.random() * 10000);
+                        $('.puzzlePwd').html('<h5>Password : '+puzzleRandomPassword+'</h5>');
+                        $('#dragDiv').css('display', 'none');
+                        break;
+                }
+                clicks = clicks + 1;
+                if(clicks == 20 || clicks == 30 || clicks == 37 || clicks == 43 || clicks == 50)
+                    toastr.info('You can take help of console', 'Thanks for your time');
+                if(puzzlePassword > 9999){
+                    toastr.info('You can take help of console', 'Thanks for your time');
+                    puzzlePassword = 0;
+                }
+                console.log(puzzlePassword);
+                if(10000-puzzleRandomPassword == puzzlePassword){
+                    clicks = 0;
+                    $('#dragDiv').css('display', 'block');
+                }
+                
+            });
+        }
+    </script>
+
+    <!-- Animation Michalsnik Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+            
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 800, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+    </script>
+
+    <!-- Social Link Script -->
+    <script>
+        const socialLink = document.querySelectorAll('.socialLink');
+        for(i=0; i<socialLink.length; i++){
+            socialLink[i].socialLinkValue = i;
+            socialLink[i].addEventListener('mouseover', function(){
+              var index = this.socialLinkValue;
+              $(this).removeClass('animated');
+              $(this).css('z-index', '3');
+              return false;
+            });
+            socialLink[i].addEventListener('mouseout', function(){
+              var index = this.socialLinkValue;
+              $(this).addClass('animated');
+              $(this).css('z-index', '2');
+              return false;
+            });
+        }
+
+    </script>
+</html>
